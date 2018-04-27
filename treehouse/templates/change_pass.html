@@ -1,0 +1,21 @@
+{% extends "base2.html" %} {% block title %}Change Password{% endblock %}
+{% block content %}
+<h1>Change Password</h1>
+<div class="back_button">
+<a href="/{{user.role}}_home">
+<img src="https://lh3.googleusercontent.com/jOZTa-tLJcnGJCtgw_hwYjZDtmSe_a47GQTiyA02q-QIIc_rimNhLCUYYic3mfCdpaft=w170"></a><br></div><br><br>
+
+{% if valid == False%}
+<b><font color="white">Old password incorrect</font></b>
+{% else %}
+<br>
+{%endif%}
+
+<Form method="POST">
+    <br><br>
+    <input class="user_text_input" type="password" name="old" placeholder="Enter Old Password"/>
+    <br>
+    <input class="user_text_input" type="password" name="new" placeholder="Enter New Password"/>
+    <br><br><button type="submit" name="change_password">Change</button>
+</Form>
+{% endblock %}
