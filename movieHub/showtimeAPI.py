@@ -1,5 +1,6 @@
 import requests
 import json
+from imdb import IMDb
 
 # sydney city id 7820
 def send_request():
@@ -28,3 +29,4 @@ def send_request():
         print('HTTP Request failed')
 
 send_request()
+

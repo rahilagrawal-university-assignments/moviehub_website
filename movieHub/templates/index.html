@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MovieHub</title>
+    </head>
+    
+   <body>
+    <form method="POST"> 
+      {% for row in movies %}
+        <button type="submit" name="id" value="{{row.imdb_id}}"> <img src="{{row.poster}}"> </button>
+      {% endfor %} 
+    </form>
+</body></html>
