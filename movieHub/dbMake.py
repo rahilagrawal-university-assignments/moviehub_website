@@ -79,6 +79,9 @@ addCinema(session, "Events Parramatta")
 results = session.query(Movie).filter_by(name="Avengers: Infinity War").all()
 
 movie = results[0]
+# or u can use a for loop like this:
+# for row in results:
+#   do something with row eg, row.imdb_id, row.name
 
 results = session.query(Cinema).filter_by(name="Events Parramatta").all()
 
