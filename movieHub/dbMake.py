@@ -35,6 +35,11 @@ class Time(Base):
     cinema_id = Column(Integer, ForeignKey("cinema.cinema_id"), nullable=False)
     imdb_id = Column(Integer, ForeignKey("movie.imdb_id"), nullable=False)
 
+class User(Base):
+    __tablename__ = "users"
+    username = Column(String(100), primary_key=True, autoincrement=False)
+    password = Column(String(100), nullable=False)
+
 def addMovie(session, id, name, poster):
     new_movie = Movie(imdb_id=id, name=name, poster=poster)
     session.add(new_movie)
@@ -58,6 +63,11 @@ def addShowtime(session, time):
 def addTime(session, imdb_id, cinema_id, showtime_id):
     new_time = Time(imdb_id=imdb_id, cinema_id=cinema_id, showtime_id=showtime_id)
     session.add(new_time)
+    session.commit()
+
+def addUser(session, username, password):
+    new_user = User(username=username, password=password)
+    session.add(new_user)
     session.commit()
 
 engine = create_engine('sqlite:///movies.db')
@@ -94,3 +104,5 @@ session = DBSession()
 # shows = results[0]
 
 # addTime(session, movie.imdb_id, cinema.cinema_id, shows.showtime_id)
+
+# addUser(session, "aditya", "aditya")

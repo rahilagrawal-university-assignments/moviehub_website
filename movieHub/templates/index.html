@@ -5,6 +5,9 @@
     </head>
     
    <body>
+    <form>
+        <input value="Login" onclick="window.location.href='http://127.0.0.1:5000/login'" type="button">
+    </form>
     <form method="POST"> 
       {% for row in movies %}
         <button type="submit" name="id" value="{{row.imdb_id}}"> <img src="{{row.poster}}"> </button>

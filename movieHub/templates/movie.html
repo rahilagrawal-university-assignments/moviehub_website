@@ -3,12 +3,22 @@
 <head>
     <title>MovieHub</title>
     </head>
+   <body>
     {{movie["title"]}}<br>
     {{movie["year"]}}<br>
     {{movie["rating"]}}<br>
     {{movie["runtimes"]}}<br>
     {{movie["genres"]}}<br>
     {{movie.summary()}}<br>
-   <body>
-    
+    <br></br>
+    {% for row in cinemas %}
+        {% for i in row %}
+            {{ i.name }}
+        {% endfor %}
+    {% endfor %}
+    {% for row in times %}
+        {% for i in row %}
+            {{ i.time }}
+        {% endfor %}
+    {% endfor %}
 </body></html>
