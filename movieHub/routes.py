@@ -50,3 +50,21 @@ def login():
             return redirect(url_for("index"))
 
     return render_template("login.html")
+
+@app.route('/payment', methods=["GET", "POST"])
+def payment():
+    if request.method == "POST":
+        child_select = request.form["child"]
+        student_select = request.form["student"]
+        adult_select = request.form["adult"]
+        pensioner_select = request.form["pensioner"]
+        card_name = request.form["name"]
+        card_number = request.form["number"]
+        expiry_date = request.form["expiry_date"]
+        ccv = request.form["CCV"]
+        return redirect(url_for("payment_successful"))
+    return render_template("payment.html")
+
+@app.route('/payment_successful')
+def payment_successful():
+    return render_template("payment_successful.html")
