@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>MovieHub</title>
-    </head>
-    
-   <body>
-    <form>
-        <input value="Login" onclick="window.location.href='http://127.0.0.1:5000/login'" type="button">
-    </form>
-    <form method="POST"> 
-      {% for row in movies %}
-        <button type="submit" name="id" value="{{row.imdb_id}}"> <img src="{{row.poster}}"> </button>
-      {% endfor %} 
-    </form>
-</body></html>
+	<head>
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles/main.css') }}">
+		<title>MovieHub</title>
+	</head>
+	
+	<body>
+		<form method="POST">
+			<div class="navbar">
+				<input class="b1" value="Sign Up" onclick="window.location.href='http://127.0.0.1:5000/signup'" type="button">
+				<input class="b1" value="Login" onclick="window.location.href='http://127.0.0.1:5000/login'" type="button">
+				<img src="{{ url_for('static', filename='styles/logo.gif') }}"  height="50px" / style="float: left;">
+				<img src="{{ url_for('static', filename='styles/logo2.png') }}"  height="50px" / style="float: left;">
+				<input type="text" placeholder="Search..">
+				<input class="b2" value="Search" onclick="window.location.href='http://127.0.0.1:5000/search'" type="button">
+			</div>
+			<div class="main">
+				{% for row in movies %}
+					<img src="{{row.poster}}" value="{{row.imdb_id}}">
+				{% endfor %}
+			</div>
+		</form>
+	</body></html>

@@ -1,0 +1,43 @@
+* {
+    text-align: center;
+}
+
+body{
+    background-size: cover;
+}
+
+Form {
+    color: white;
+    text-align: center;
+    #font-size: 100px;
+    #background-color: purple;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #FF7800;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+}
+.navbar input[type=text] {
+    #padding: 3px;
+    border: none;
+    margin-top: 4px;
+    font-size: 24px;
+}
+.main {
+    margin-top: 70px; 
+}
+.b1{
+    background-color: #5FF6EF;
+    font-size: 36px;
+    float: right;
+}
+.b2{
+    background-color: #5FF6EF;
+    font-size: 24px;
+}
+.movieimg{
+    width:500px;
+    height:600px;"
+}
