@@ -9,10 +9,10 @@ from dbFunctions import movieQuery, playsQuery, cinemaQuery, timeQuery, showtime
 
 @app.route('/', methods=["GET", "POST"])
 def index():
-    if request.method == "POST":
-        imdb_id = request.form["id"]
-        return redirect(url_for('movie', id=imdb_id))
-    ia = IMDb()
+    # if request.method == "POST":
+    #     imdb_id = request.form["id"]
+    #     return redirect(url_for('movie', id=imdb_id))
+    # ia = IMDb()
     movies = movieQuery(None)
     return render_template("index.html", movies=movies)
 
@@ -50,3 +50,24 @@ def login():
             return redirect(url_for("index"))
 
     return render_template("login.html")
+'''
+Created by : Rahil Agrawal
+Created At : 11/5/18
+Mock Functions for testing links
+Can be modified by Backend Devs
+'''
+@app.route('/payment', methods=["GET" , "POST"])
+def payment():
+    return render_template("payment.html")
+
+@app.route('/movielist', methods=["GET" , "POST"])
+def movielist():
+    return render_template("movielist.html")
+
+@app.route('/moviedetail', methods=["GET" , "POST"])
+def moviedetail():
+    return render_template("moviedetail.html")
+
+@app.route('/signup', methods=["GET" , "POST"])
+def signup():
+    return render_template("signup.html")
