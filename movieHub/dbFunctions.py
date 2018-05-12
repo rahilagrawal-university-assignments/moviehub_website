@@ -41,3 +41,15 @@ def checkUser(username, password):
     if result:
         return True
     return False
+
+def searchQuery(searchText):
+    return session.query(Movie).filter(Movie.name.ilike(searchText))
+
+def newUser(username, password):
+    try:
+        new_user = User(username=username, password=password)
+        session.add(new_user)
+        session.commit()
+        return True
+    except: 
+        return False

@@ -14,12 +14,12 @@
 					<img src="{{ url_for('static', filename='styles/logo.gif') }}"  height="50px" / style="float: left;">
 					<img src="{{ url_for('static', filename='styles/logo2.png') }}"  height="50px" / style="float: left;">
 				</a>
-				<input type="text" placeholder="Search..">
-				<input class="b2" value="Search" onclick="window.location.href='http://127.0.0.1:5000/search'" type="button">
+				<input type="text" placeholder="Search.." name="searchText">
+                <input class="b2" type="submit" name="search" value="Search">
 			</div>
 			<div class="main">
 				{% for row in movies %}
-					<a href="http://127.0.0.1:5000/moviedetail"><img src="{{row.poster}}" value="{{row.imdb_id}}"></a>
+					<a href="http://127.0.0.1:5000/moviedetail?id={{row.imdb_id}}"><img src="{{row.poster}}"></a>
 				{% endfor %}
 			</div>
 		</form>
