@@ -15,7 +15,7 @@ def index():
             return redirect(url_for('search', searchText=searchText))
     ia = IMDb()
     nowShowing = movieQuery(None, True)
-    print(nowShowing)
+    
     comingSoon = movieQuery(None, False)
     return render_template("index.html", nowShowing=nowShowing, comingSoon=comingSoon)
 
@@ -127,3 +127,4 @@ def search():
     searchText = request.args.get("searchText")
     movies = searchQuery(searchText)
     return render_template("search.html", searchText=searchText, movies=movies)
+
