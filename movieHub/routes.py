@@ -66,15 +66,24 @@ Can be modified by Backend Devs
 @app.route('/payment', methods=["GET" , "POST"])
 def payment():
     if request.method == "POST":
-        if "searchText" in request.form:
+        if request.form["searchText"] is None:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
+        numChild = request.form["child"]
+        numStudent = request.form["student"]
+        numAdult = request.form["adult"]
+        numPensioner = request.form["pensioner"]
+        name = request.form["name"]
+        number = request.form["number"]
+        expiry = request.form["expiry_date"]
+        ccv = request.form["CCV"]
+        return render_template("payment_successful.html")
     return render_template("payment.html")
 
 @app.route('/movies', methods=["GET" , "POST"])
 def movies():
     if request.method == "POST":
-        if "searchText" in request.form:
+        if request.form["searchText"] is None:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
     movies = movieQuery(None, None)
