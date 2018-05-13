@@ -18,10 +18,27 @@
         <input class="b2" type="submit" name="search" value="Search">
       </div>
       <div class="main">
-        Please enter login details below:<br>
-        <input name="username" type="text" placeholder="username"/ required>
-        <input name="password" type="password" placeholder="Password"/ required>
-        <button type="submit" name="bt">Enter</button>
+        <h1>Movie Details Page</h1>
+            {{movie["title"]}}<br>
+            {{movie["year"]}}<br>
+            {{movie["rating"]}}<br>
+            {{movie["runtimes"]}}<br>
+            {{movie["genres"]}}<br>
+            {{movie.summary()}}<br>
+            <br></br>
+            {% for row in cinemas %}
+                {% for i in row %}
+                    {{ i.name }}
+                {% endfor %}
+            {% endfor %}
+            {% for row in times %}
+                {% for i in row %}
+                    {{ i.time }}
+                {% endfor %}
+            {% endfor %}
+            <br>
+            <br>
+        <input class="b2" value="Payment" onclick="window.location.href='http://127.0.0.1:5000/payment'" type="button">
       </div>
     </form>
   </body></html>

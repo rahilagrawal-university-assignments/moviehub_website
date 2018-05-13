@@ -6,11 +6,15 @@ engine = create_engine('sqlite:///movies.db')
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
-def movieQuery(name):
-    if name is None:
+def movieQuery(name, is_showing):
+    if name is None and is_showing is None:
         return session.query(Movie).all()
-
-    return session.query(Movie).filter_by(name=name).all()
+    elif name is None and is_showing is not None:
+        return session.query(Movie).filter_by(is_showing=is_showing).all()
+    elif name is not None and is_showing is None:
+        return session.query(Movie).filter_by(name=name).all()
+    else:
+        return session.query(Movie).filter_by(name=name, is_showing=is_showing).all()
 
 def playsQuery(imdb_id):
     if imdb_id is None:
@@ -41,3 +45,16 @@ def checkUser(username, password):
     if result:
         return True
     return False
+
+def searchQuery(searchText):
+    searchText = "%" + searchText + "%"
+    return session.query(Movie).filter(Movie.name.ilike(searchText)).all()
+
+def newUser(username, password):
+    try:
+        new_user = User(username=username, password=password)
+        session.add(new_user)
+        session.commit()
+        return True
+    except: 
+        return False
