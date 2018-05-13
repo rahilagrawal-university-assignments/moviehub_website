@@ -14,8 +14,10 @@ def index():
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
     ia = IMDb()
-    movies = movieQuery(None)
-    return render_template("index.html", movies=movies)
+    nowShowing = movieQuery(None, True)
+    print(nowShowing)
+    comingSoon = movieQuery(None, False)
+    return render_template("index.html", nowShowing=nowShowing, comingSoon=comingSoon)
 
 
 # @app.route('/movie', methods=["GET" , "POST"])
@@ -44,6 +46,9 @@ def index():
 @app.route('/login', methods=["GET" , "POST"])
 def login():
     if request.method == "POST":
+        if "searchText" in request.form:
+            searchText = request.form["searchText"]
+            return redirect(url_for('search', searchText=searchText))
         username = str(request.form["username"])
         password = str(request.form["password"])
 
@@ -53,20 +58,34 @@ def login():
     return render_template("login.html")
 '''
 Created by : Rahil Agrawal
+Modified by : Aditya Karia
 Created At : 11/5/18
 Mock Functions for testing links
 Can be modified by Backend Devs
 '''
 @app.route('/payment', methods=["GET" , "POST"])
 def payment():
+    if request.method == "POST":
+        if "searchText" in request.form:
+            searchText = request.form["searchText"]
+            return redirect(url_for('search', searchText=searchText))
     return render_template("payment.html")
 
-@app.route('/movielist', methods=["GET" , "POST"])
-def movielist():
-    return render_template("movielist.html")
+@app.route('/movies', methods=["GET" , "POST"])
+def movies():
+    if request.method == "POST":
+        if "searchText" in request.form:
+            searchText = request.form["searchText"]
+            return redirect(url_for('search', searchText=searchText))
+    movies = movieQuery(None, None)
+    return render_template("movies.html", movies=movies)
 
 @app.route('/moviedetail', methods=["GET" , "POST"])
 def moviedetail():
+    if request.method == "POST":
+        if "searchText" in request.form:
+            searchText = request.form["searchText"]
+            return redirect(url_for('search', searchText=searchText))
     ia = IMDb()
     imdb_id = request.args.get("id")
 
@@ -89,6 +108,9 @@ def moviedetail():
 @app.route('/signup', methods=["GET" , "POST"])
 def signup():
     if request.method == "POST":
+        if "searchText" in request.form:
+            searchText = request.form["searchText"]
+            return redirect(url_for('search', searchText=searchText))
         username = str(request.form["username"])
         password = str(request.form["password"])
 
@@ -98,6 +120,10 @@ def signup():
 
 @app.route('/search', methods=["GET", "POST"])
 def search():
+    if request.method == "POST":
+        if "searchText" in request.form:
+            searchText = request.form["searchText"]
+            return redirect(url_for('search', searchText=searchText))
     searchText = request.args.get("searchText")
     movies = searchQuery(searchText)
     return render_template("search.html", searchText=searchText, movies=movies)

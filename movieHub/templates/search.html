@@ -18,7 +18,10 @@
                 <input class="b2" type="submit" name="search" value="Search">
             </div>
             <div class="main">
-                {{searchText}}
+                Showing results for {{searchText}}<br><br>
+                {% for i in movies %}
+                    <a href="http://127.0.0.1:5000/moviedetail?id={{i.imdb_id}}"><img src="{{i.poster}}"></a>
+                {% endfor %}
             </div>
         </form>
     </body></html>

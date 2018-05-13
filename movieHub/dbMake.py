@@ -1,4 +1,4 @@
-from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy import Column, ForeignKey, Integer, String, Boolean
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
@@ -11,6 +11,7 @@ class Movie(Base):
     imdb_id = Column(Integer, primary_key=True, autoincrement=False)
     name = Column(String(100), nullable=False)
     poster = Column(String(250), nullable=True)
+    is_showing = Column(Boolean, default=True)
 
 class Cinema(Base):
     __tablename__ = "cinema"
@@ -40,8 +41,8 @@ class User(Base):
     username = Column(String(100), primary_key=True, autoincrement=False)
     password = Column(String(100), nullable=False)
 
-def addMovie(session, id, name, poster):
-    new_movie = Movie(imdb_id=id, name=name, poster=poster)
+def addMovie(session, id, name, poster, is_showing):
+    new_movie = Movie(imdb_id=id, name=name, poster=poster, is_showing=is_showing)
     session.add(new_movie)
     session.commit()
 
@@ -76,11 +77,11 @@ DBSession = sessionmaker(bind=engine)
 
 session = DBSession()
 
-# addMovie(session, 4154756, "Avengers: Infinity War", "http://image.tmdb.org/t/p/w154/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg")
-# addMovie(session, 2231461, "Rampage", "http://image.tmdb.org/t/p/w154/30oXQKwibh0uANGMs0Sytw3uN22.jpg")
-# addMovie(session, 6644200, "A Quiet Place", "http://image.tmdb.org/t/p/w154/mrepRTUhNKU70PFf7LNQypbkH00.jpg")
-# addMovie(session, 1677720, "Ready Player One", "http://image.tmdb.org/t/p/w154/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg")
-# addMovie(session, 6791096, "I Feel Pretty", "http://image.tmdb.org/t/p/w154/bZe6x2fKtwVDsAvZQ9fnIJznBrc.jpg")
+# addMovie(session, 4154756, "Avengers: Infinity War", "http://image.tmdb.org/t/p/w154/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg", True)
+# addMovie(session, 2231461, "Rampage", "http://image.tmdb.org/t/p/w154/30oXQKwibh0uANGMs0Sytw3uN22.jpg", True)
+# addMovie(session, 6644200, "A Quiet Place", "http://image.tmdb.org/t/p/w154/mrepRTUhNKU70PFf7LNQypbkH00.jpg", True)
+# addMovie(session, 1677720, "Ready Player One", "http://image.tmdb.org/t/p/w154/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg", False)
+# addMovie(session, 6791096, "I Feel Pretty", "http://image.tmdb.org/t/p/w154/bZe6x2fKtwVDsAvZQ9fnIJznBrc.jpg", False)
 
 # addCinema(session, "Events Parramatta")
 
