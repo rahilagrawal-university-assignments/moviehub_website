@@ -78,7 +78,8 @@ def movies():
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
     movies = movieQuery(None, None)
-    return render_template("movies.html", movies=movies)
+    genres = ['action', 'thriller', 'blah']
+    return render_template("movies.html", movies=movies, genres=genres)
 
 @app.route('/moviedetail', methods=["GET" , "POST"])
 def moviedetail():
