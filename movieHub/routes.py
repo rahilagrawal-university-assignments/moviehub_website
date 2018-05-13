@@ -10,12 +10,11 @@ from dbFunctions import *
 @app.route('/', methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        if "searchText" in request.form:
+        if request.form["searchText"]:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
-    ia = IMDb()
-    nowShowing = movieQuery(None, True)
     
+    nowShowing = movieQuery(None, True)
     comingSoon = movieQuery(None, False)
     return render_template("index.html", nowShowing=nowShowing, comingSoon=comingSoon)
 
@@ -46,7 +45,7 @@ def index():
 @app.route('/login', methods=["GET" , "POST"])
 def login():
     if request.method == "POST":
-        if "searchText" in request.form:
+        if request.form["searchText"]:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
         username = str(request.form["username"])
@@ -66,25 +65,40 @@ Can be modified by Backend Devs
 @app.route('/payment', methods=["GET" , "POST"])
 def payment():
     if request.method == "POST":
-        if "searchText" in request.form:
+        if request.form["searchText"]:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
     return render_template("payment.html")
 
 @app.route('/movies', methods=["GET" , "POST"])
 def movies():
+    movies = movieQuery(None, None)
+    genres = ["Action", "Adventure", "Animation", "Biography", "Comedy", "Crime", "Documentary",
+                "Drama", "Family", "Fantasy", "Film ""Noir", "History", "Horror", "Music", "Musical", 
+                "Mystery", "Romance", "Sci-Fi", "Short", "Sport", "Superhero", "Thriller", "War", "Western"]
+    
     if request.method == "POST":
-        if "searchText" in request.form:
+        if request.form["searchText"]:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
-    movies = movieQuery(None, None)
-    genres = ['action', 'thriller', 'blah']
+        genresSelected = request.form.getlist("genre")
+        
+        updateMovies = []
+        for movie in movies:
+            for i in movie.genres.split():
+                print(i)
+                if i in genresSelected and movie not in updateMovies:
+                    updateMovies.append(movie)
+        print(updateMovies)
+        return render_template("movies.html", movies=updateMovies, genres=genres)
+
+   
     return render_template("movies.html", movies=movies, genres=genres)
 
 @app.route('/moviedetail', methods=["GET" , "POST"])
 def moviedetail():
     if request.method == "POST":
-        if "searchText" in request.form:
+        if request.form["searchText"]:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
     ia = IMDb()
@@ -109,7 +123,7 @@ def moviedetail():
 @app.route('/signup', methods=["GET" , "POST"])
 def signup():
     if request.method == "POST":
-        if "searchText" in request.form:
+        if request.form["searchText"]:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
         username = str(request.form["username"])
@@ -122,7 +136,7 @@ def signup():
 @app.route('/search', methods=["GET", "POST"])
 def search():
     if request.method == "POST":
-        if "searchText" in request.form:
+        if request.form["searchText"]:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
     searchText = request.args.get("searchText")

@@ -26,9 +26,9 @@
 			<h1>
 			Genres:<br>
 			{% for genre in genres%}
-			<input type="checkbox" value="{{genre}}">{{genre}}<br>
+			 <input type="checkbox" name="genre" value="{{genre}}">{{genre}}<br>
 			{%endfor%}
 		</h1>
-		<input type="button" value="Apply filters"  href='/movies'>
+		<input type="submit" value="Apply filters">
 		</form>
 	</body></html>
