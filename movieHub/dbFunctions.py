@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from dbMake import Movie, Cinema, Showtime, Plays, Time, User
+from dbMake import Movie, Cinema, Time, User
 
 engine = create_engine('sqlite:///movies.db')
 DBSession = sessionmaker(bind=engine)
@@ -16,12 +16,6 @@ def movieQuery(name, is_showing):
     else:
         return session.query(Movie).filter_by(name=name, is_showing=is_showing).all()
 
-def playsQuery(imdb_id):
-    if imdb_id is None:
-        return session.query(Plays).all()
-
-    return session.query(Plays).filter_by(imdb_id=imdb_id).all()
-
 def cinemaQuery(cinema_id):
     if cinema_id is None:
         return session.query(Cinema).all()
@@ -33,12 +27,6 @@ def timeQuery(cinema_id, imdb_id):
         return session.query(Time).all()
 
     return session.query(Time).filter_by(cinema_id=cinema_id, imdb_id=imdb_id).all()
-
-def showtimesQuery(showtime_id):
-    if showtime_id is None:
-        return session.query(Showtime).all()
-
-    return session.query(Showtime).filter_by(showtime_id=showtime_id).all()
 
 def checkUser(username, password):
     result = session.query(User).filter_by(username=username, password=password).all()

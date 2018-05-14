@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<<<<<<< HEAD
+	<head>
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles/main.css') }}">
+		<title>MovieHub</title>
+	</head>
+	
+	<body>
+		<form method="POST">
+			<div class="navbar">
+				<input class="b1" value="Sign Up" onclick="window.location.href='http://127.0.0.1:5000/signup'" type="button">
+				<input class="b1" value="Login" onclick="window.location.href='http://127.0.0.1:5000/login'" type="button">
+				<a href="http://127.0.0.1:5000/">
+					<img src="{{ url_for('static', filename='styles/logo.gif') }}"  height="50px" / style="float: left;">
+					<img src="{{ url_for('static', filename='styles/logo2.png') }}"  height="50px" / style="float: left;">
+				</a>
+				<input type="text" placeholder="Search.." name="searchText">
+				<input class="b2" type="submit" name="search" value="Search">
+        <input class="b2" value="Movies" onclick="window.location.href='http://127.0.0.1:5000/movies'" type="button">
+			</div>
+			<div class="main">
+				Movies List Page<br>
+				{% for movie in movies %}
+					<a href="http://127.0.0.1:5000/moviedetail?id={{movie.imdb_id}}"><img src="{{movie.poster}}"></a>
+				{% endfor %}
+			</div>
+			<h1>
+			Genres:<br>
+			{% for genre in genres%}
+			 <input type="checkbox" name="genre" value="{{genre}}">{{genre}}<br>
+			{%endfor%}
+		</h1>
+		<input type="submit" value="Apply filters">
+		</form>
+	</body></html>

@@ -16,7 +16,7 @@ def index():
     
     nowShowing = movieQuery(None, True)
     comingSoon = movieQuery(None, False)
-    return render_template("index.html", nowShowing=nowShowing, comingSoon=comingSoon)
+    return render_template("index.html", nowShowing=nowShowing[0:5], comingSoon=comingSoon[0:5])
 
 
 # @app.route('/movie', methods=["GET" , "POST"])
@@ -83,7 +83,7 @@ def payment():
 def movies():
     movies = movieQuery(None, None)
     genres = ["Action", "Adventure", "Animation", "Biography", "Comedy", "Crime", "Documentary",
-                "Drama", "Family", "Fantasy", "Film ""Noir", "History", "Horror", "Music", "Musical", 
+                "Drama", "Family", "Fantasy", "Film Noir", "History", "Horror", "Music", "Musical", 
                 "Mystery", "Romance", "Sci-Fi", "Short", "Sport", "Superhero", "Thriller", "War", "Western"]
     
     if request.method == "POST":
@@ -116,17 +116,17 @@ def moviedetail():
     movie = ia.get_movie(imdb_id)
     ia.update(movie)
     
-    cinema_ids = playsQuery(imdb_id)
-    cinemaList = []
-    timesObj = []
-    for i in cinema_ids:
-        cinemaList.append(cinemaQuery(i.cinema_id))
-        timesObj.append(timeQuery(i.cinema_id, imdb_id))
+    # cinema_ids = playsQuery(imdb_id)
+    # cinemaList = []
+    # timesObj = []
+    # for i in cinema_ids:
+    #     cinemaList.append(cinemaQuery(i.cinema_id))
+    #     timesObj.append(timeQuery(i.cinema_id, imdb_id))
 
-    times = []
-    for obj in timesObj:
-        for i in obj:
-            times.append(showtimesQuery(i.showtime_id))
+    # times = []
+    # for obj in timesObj:
+    #     for i in obj:
+    #         times.append(showtimesQuery(i.showtime_id))
     return render_template("moviedetail.html", movie=movie, cinemas=cinemaList, times=times)
 
 @app.route('/signup', methods=["GET" , "POST"])

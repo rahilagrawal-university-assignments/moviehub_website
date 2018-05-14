@@ -5,8 +5,11 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from dbFunctions import *
 import datetime
+from showtimeAPI import *
+from imdb import IMDb
 
 Base = declarative_base()
+
 
 class Movie(Base):
     __tablename__ = "movie"
@@ -18,19 +21,8 @@ class Movie(Base):
 
 class Cinema(Base):
     __tablename__ = "cinema"
-    cinema_id = Column(Integer, primary_key=True , autoincrement=False)
+    cinema_id = Column(Integer, primary_key=True)
     name = Column(String(100), nullable=False)
-
-class Plays(Base):
-    __tablename__ = "plays"
-    plays_id = Column(Integer, primary_key=True)
-    cinema_id = Column(Integer, ForeignKey("cinema.cinema_id"), nullable=False)
-    imdb_id = Column(Integer, ForeignKey("movie.imdb_id"), nullable=False)
-
-# class Showtime(Base):
-#     __tablename__ = "showtime"
-#     showtime_id = Column(Integer, primary_key=True)
-#     time = Column(String(100), nullable=False)
 
 class Time(Base):
     __tablename__ = "time"
@@ -49,20 +41,10 @@ def addMovie(session, id, name, poster, is_showing, genres):
     session.add(new_movie)
     session.commit()
 
-def addCinema(session, name_C , id_c):
-    new_cinema = Cinema(cinema_id=id_c , name=name_C)
+def addCinema(session, name):
+    new_cinema = Cinema(name=name)
     session.add(new_cinema)
     session.commit()
-
-def addPlays(session, imdb_id, cinema_id):
-    new_plays = Plays(imdb_id=imdb_id, cinema_id=cinema_id)
-    session.add(new_plays)
-    session.commit()
-
-# def addShowtime(session, time):
-#     new_showtime = Showtime(time=time)
-#     session.add(new_showtime)
-#     session.commit()
 
 def addTime(session, imdb_id, cinema_id, show_time):
     new_time = Time(imdb_id=imdb_id, cinema_id=cinema_id, showtime=show_time)
@@ -74,34 +56,32 @@ def addUser(session, username, password):
     session.add(new_user)
     session.commit()
 
-<<<<<<< HEAD
-
 # this will add all the theaters supplied using the parameteres into the session 
-def addall_theaters(session ,listof_theaters):
-    for i in range(0, len(listof_theaters["cinemas"])):
-         # print("%s " % (listof_theaters["cinemas"][i]["name"]) , (listof_theaters["cinemas"][i]["id"]))
-         addCinema(session , listof_theaters["cinemas"][i]["name"] , (listof_theaters["cinemas"][i]["id"]))
+# def addall_theaters(session ,listof_theaters):
+#     for i in range(0, len(listof_theaters["cinemas"])):
+#          # print("%s " % (listof_theaters["cinemas"][i]["name"]) , (listof_theaters["cinemas"][i]["id"]))
+#          addCinema(session , listof_theaters["cinemas"][i]["name"] , (listof_theaters["cinemas"][i]["id"]))
 
-#this will add all the movies supplied into the session depending on if it is upcoming or not 
-def addall_movies(session , listof_movies , includes_upcoming):
-    for i in range(0, len(listof_movies["movies"])):
-        addMovie(session , 
-        int(get_imdbId(listof_movies["movies"][i]["id"])),
-        listof_movies["movies"][i]["title"] ,
-        listof_movies["movies"][i]["poster_image_thumbnail"] , includes_upcoming)
+# #this will add all the movies supplied into the session depending on if it is upcoming or not 
+# def addall_movies(session , listof_movies , includes_upcoming):
+#     for i in range(0, len(listof_movies["movies"])):
+#         addMovie(session , 
+#         int(get_imdbId(listof_movies["movies"][i]["id"])),
+#         listof_movies["movies"][i]["title"] ,
+#         listof_movies["movies"][i]["poster_image_thumbnail"] , includes_upcoming)
 
-#this will add all the showtimes and the times of the movies into the session 
-def addall_times(session , listof_times):
-    for i in range(0 , len(listof_times)["showtimes"]):
-        addTime(session , int(get_imdbId(len(listof_times["showtimes"][i]["movie_id"]))),
-            int(len(listof_times["showtimes"][i]["cinema_id"]))  , len(listof_times["showtimes"][i]["start_at"]))
-#goes through all the cinemas in the database and 
-def addall_plays(session):
-    theaters = session.query(Cinema).filter_by(id>0).all
-    for Cinema in theaters:
-       listof_movies =  get_movie(str(Cinema.cinema_id))
-       for i in range(0,len(listof_movies["movies"])):
-            addPlays(session ,int(get_imdbId(listof_movies["movies"][i]["movie_id"])) ,Cinema.cinema_id)
+# #this will add all the showtimes and the times of the movies into the session 
+# def addall_times(session , listof_times):
+#     for i in range(0 , len(listof_times)["showtimes"]):
+#         addTime(session , int(get_imdbId(len(listof_times["showtimes"][i]["movie_id"]))),
+#             int(len(listof_times["showtimes"][i]["cinema_id"]))  , len(listof_times["showtimes"][i]["start_at"]))
+# #goes through all the cinemas in the database and 
+# def addall_plays(session):
+#     theaters = session.query(Cinema).filter_by(id>0).all
+#     for Cinema in theaters:
+#        listof_movies =  get_movie(str(Cinema.cinema_id))
+#        for i in range(0,len(listof_movies["movies"])):
+#             addPlays(session ,int(get_imdbId(listof_movies["movies"][i]["movie_id"])) ,Cinema.cinema_id)
 
 
 
@@ -110,31 +90,104 @@ Base.metadata.create_all(engine)
 DBSession = sessionmaker(bind=engine)
 
 session = DBSession()
+
+#################################################ADITYA DB STUFF###################################
+
+# nowShowing = {"Deadpool 2" : [], "Avengers: Infinity War" : [], "Life of the Party" : [], "Breath" : [], "I Feel Pretty" : [], "Tully" : [],
+#                 "Crooked House" : [], "A Quiet Place" : [], "Chappaquiddick" : [], "Rampage" : [], "Peter Rabbit" : [],
+#                 "Super Troopers 2" : [], "Sherlock Gnomes" : [], "Black Panther" : [], "Blockers" : [], "Ready Player One" : [], "Truth or Dare" : []}
+# ia = IMDb()
+
+# for k in nowShowing.keys():
+#     movie = ia.search_movie(k)[0]
+#     nowShowing[k].append(ia.get_imdbID(movie))
+#     print(movie["title"])
+
+# for k,v in nowShowing.items():
+#     movieInfo = getMovieInfo("tt"+v[0])
+#     if movieInfo is None:
+#         print("none " + k)
+#     nowShowing[k].append(movieInfo["movies"][0]["poster_image"]["image_files"][1]["url"])
+    
+#     genreString = ""
+#     for genre in movieInfo["movies"][0]["genres"]:
+#         if str(genre["name"]) == "Science Fiction":
+#             genreString += "Sci-Fi "
+#             continue
+#         genreString += str(genre["name"] + " ")
+#     nowShowing[k].append(genreString)
+#     print(nowShowing[k])
+#     addMovie(session, v[0], k, v[1], True, v[2])
+
+# comingSoon = {
+#     "Cargo" : [],
+#     "The Bookshop" : [],
+#     "Duck Duck Goose" : [],
+#     "Solo: A Star Wars Story" : [],
+#     "Ocean's 8" : [],
+#     "Jurrasic World: Fallen Kingdom" : [],
+#     "Gringo" : [],
+#     "Tag" : [],
+#     "Incredibles 2" : [],
+#     "Skyscraper" : [],
+#     "The Equalizer 2" : [], 
+# }
+
+# for k in comingSoon.keys():
+#     movie = ia.search_movie(k)[0]
+#     comingSoon[k].append(ia.get_imdbID(movie))
+#     print(movie["title"])
+
+# for k,v in comingSoon.items():
+#     movieInfo = getMovieInfo("tt"+v[0])
+#     comingSoon[k].append(movieInfo["movies"][0]["poster_image"]["image_files"][1]["url"])
+#     genreString = ""
+#     for genre in movieInfo["movies"][0]["genres"]:
+#         if str(genre["name"]) == "Science Fiction":
+#             genreString += "Sci-Fi "
+#             continue
+#         genreString += str(genre["name"] + " ")
+#     comingSoon[k].append(genreString)
+#     print(comingSoon[k])
+#     addMovie(session, v[0], k, v[1], False, v[2])
+
+# events = ["Beverly Hills", "Burwood", "Castle Hill", "Cronulla", "George Street", "Hornsby", "Kotara",
+#             "Liverpool", "Miranda", "Newcastle", "Shellharbour", "Tuggerah", "Bondi Junction", "Campbelltown"
+#             "Coffs Harbour", "Drive in Blacktown", "Glendale", "Hurstville", "Lismore", "Macquarie", "Moonlight Cinema Sydney",
+#             "Parramatta", "Top Ryde City", "Wollongong"]
+
+# hoyts = ["Bankstown", "Blacktown", "Broadway", "Charlestown", "Chatswood Westfield", "Eastgardens", "Entertainment Quarter", 
+#             "Erina", "Mt Druitt", "Penrith", "Tweed City", "Warrawong", "Warringah Mall", "Wetherill Park"]
+
+# for i in events:
+#     addCinema(session, "Events " + i)
+
+# for i in hoyts:
+#     addCinema(session, "Hoyts " + i)
+
+
+###################################################################################################
+
 #for upcomingdates
-date = datetime.date.today() + datetime.timedelta(days=7)
+# date = datetime.date.today() + datetime.timedelta(days=7)
 
-#add Cinemas
-#the arguments location , distance 
-addall_theaters(session , get_theaters("-33.939961, 151.22966" , 5))
-#add Movies 
-#arguments you can add a theater_id to make it precise
-addall_movies(session , get_movie("") , False);
-addall_movies(session , get_all_upcoming(date))
-#add showtimes
-#arguments you can use cinema id or movie id aswell to make it more specific
-addall_times(session , get_Showtimes("" , ""))
-addall_plays(session)
+# #add Cinemas
+# #the arguments location , distance 
+# addall_theaters(session , get_theaters("-33.939961, 151.22966" , 5))
+# #add Movies 
+# #arguments you can add a theater_id to make it precise
+# addall_movies(session , get_movie("") , False);
+# addall_movies(session , get_all_upcoming(date))
+# #add showtimes
+# #arguments you can use cinema id or movie id aswell to make it more specific
+# addall_times(session , get_Showtimes("" , ""))
+# addall_plays(session)
 
-#
-
-
-=======
 # engine = create_engine('sqlite:///movies.db')
 # Base.metadata.create_all(engine)
 # DBSession = sessionmaker(bind=engine)
 
 # session = DBSession()
->>>>>>> 90dd1e01e22c6523c4e0f8722d10ad4605360917
 
 # addMovie(session, 4154756, "Avengers: Infinity War", "http://image.tmdb.org/t/p/w154/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg", True, "Action Adventure Fantasy Sci-Fi")
 # addMovie(session, 2231461, "Rampage", "http://image.tmdb.org/t/p/w154/30oXQKwibh0uANGMs0Sytw3uN22.jpg", True, "Action Adventure Sci-Fi")
@@ -166,3 +219,5 @@ addall_plays(session)
 # addTime(session, movie.imdb_id, cinema.cinema_id, shows.showtime_id)
 
 # addUser(session, "aditya", "aditya")
+
+

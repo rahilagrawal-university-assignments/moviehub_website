@@ -1,6 +1,7 @@
 import requests
 import json
 from imdb import IMDb
+import datetime
 
 # sydney city id 7820
 def get_showtimes(cinema_ids , movie_ids):
@@ -61,14 +62,14 @@ def get_movie(cinema_ids):
         print('HTTP Request failed')
 
 
-def get_all_upcoming(curr_date):
+def getMovieInfo(imdb_id):
     try:
         response = requests.get(
             url="https://api.internationalshowtimes.com/v4/movies/",
             params={
                 "countries" : "AU",
-                "release_date_from" : curr_date,
-                "include_upcomings" : "true"
+                "imdb_id" : imdb_id,
+                "fields" : "genres,poster_image"
             },
             headers={
                 "X-API-Key": "jSaZYUE0VbpaOAUawsBmScBjQjXB5Vd8",
