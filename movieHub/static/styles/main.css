@@ -45,3 +45,8 @@ Form {
 h1{
 	color: #222222;
 }
+
+table, td {
+    border: 1px solid black;
+    align-self: center;
+}

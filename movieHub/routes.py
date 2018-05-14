@@ -110,24 +110,28 @@ def moviedetail():
         if request.form["searchText"]:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
+
     ia = IMDb()
     imdb_id = request.args.get("id")
 
     movie = ia.get_movie(imdb_id)
     ia.update(movie)
-    
+
     cinema_ids = playsQuery(imdb_id)
     cinemaList = []
     timesObj = []
     for i in cinema_ids:
-        cinemaList.append(cinemaQuery(i.cinema_id))
-        timesObj.append(timeQuery(i.cinema_id, imdb_id))
+        cinemaList = cinemaList + cinemaQuery(i.cinema_id)
+        timesObj = timesObj + timeQuery(i.cinema_id, imdb_id)
 
     times = []
     for obj in timesObj:
-        for i in obj:
-            times.append(showtimesQuery(i.showtime_id))
-    return render_template("moviedetail.html", movie=movie, cinemas=cinemaList, times=times)
+        times = times + showtimesQuery(obj.showtime_id)
+
+    print(cinemaList)
+    print(timesObj)
+    print(times)
+    return render_template("moviedetail.html", movie=movie, times=timesObj, cinemas=cinemaList, showtimes=times)
 
 @app.route('/signup', methods=["GET" , "POST"])
 def signup():
