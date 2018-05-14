@@ -19,7 +19,10 @@
                 <input class="b2" value="Movies" onclick="window.location.href='http://127.0.0.1:5000/movies'" type="button">
             </div>
             <div class="main">
-                Showing results for {{searchText}}<br><br>
+                <h3>Showing results for {{searchText}}</h3><br><br>
+                {% if not_found == 1 %}
+                    <font> No movie matches your search terms </font>
+                {% endif %}
                 {% for i in movies %}
                     <a href="http://127.0.0.1:5000/moviedetail?id={{i.imdb_id}}"><img src="{{i.poster}}"></a>
                 {% endfor %}

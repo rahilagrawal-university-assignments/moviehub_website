@@ -151,5 +151,7 @@ def search():
             return redirect(url_for('search', searchText=searchText))
     searchText = request.args.get("searchText")
     movies = searchQuery(searchText)
-    return render_template("search.html", searchText=searchText, movies=movies)
+    if not movies:
+        return render_template("search.html", searchText=searchText, movies=movies, not_found=1)    
+    return render_template("search.html", searchText=searchText, movies=movies, not_found=0)
 
