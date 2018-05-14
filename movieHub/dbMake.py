@@ -13,6 +13,7 @@ class Movie(Base):
     imdb_id = Column(Integer, primary_key=True, autoincrement=False)
     name = Column(String(100), nullable=False)
     poster = Column(String(250), nullable=True)
+    genres = Column(String(250), nullable=False)
     is_showing = Column(Boolean, default=True)
 
 class Cinema(Base):
@@ -43,8 +44,8 @@ class User(Base):
     username = Column(String(100), primary_key=True, autoincrement=False)
     password = Column(String(100), nullable=False)
 
-def addMovie(session, id, name, poster, is_showing):
-    new_movie = Movie(imdb_id=id, name=name, poster=poster, is_showing=is_showing)
+def addMovie(session, id, name, poster, is_showing, genres):
+    new_movie = Movie(imdb_id=id, name=name, poster=poster, is_showing=is_showing, genres=genres)
     session.add(new_movie)
     session.commit()
 
@@ -73,6 +74,7 @@ def addUser(session, username, password):
     session.add(new_user)
     session.commit()
 
+<<<<<<< HEAD
 
 # this will add all the theaters supplied using the parameteres into the session 
 def addall_theaters(session ,listof_theaters):
@@ -126,12 +128,19 @@ addall_plays(session)
 #
 
 
+=======
+# engine = create_engine('sqlite:///movies.db')
+# Base.metadata.create_all(engine)
+# DBSession = sessionmaker(bind=engine)
 
-# addMovie(session, 4154756, "Avengers: Infinity War", "http://image.tmdb.org/t/p/w154/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg", True)
-# addMovie(session, 2231461, "Rampage", "http://image.tmdb.org/t/p/w154/30oXQKwibh0uANGMs0Sytw3uN22.jpg", True)
-# addMovie(session, 6644200, "A Quiet Place", "http://image.tmdb.org/t/p/w154/mrepRTUhNKU70PFf7LNQypbkH00.jpg", True)
-# addMovie(session, 1677720, "Ready Player One", "http://image.tmdb.org/t/p/w154/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg", False)
-# addMovie(session, 6791096, "I Feel Pretty", "http://image.tmdb.org/t/p/w154/bZe6x2fKtwVDsAvZQ9fnIJznBrc.jpg", False)
+# session = DBSession()
+>>>>>>> 90dd1e01e22c6523c4e0f8722d10ad4605360917
+
+# addMovie(session, 4154756, "Avengers: Infinity War", "http://image.tmdb.org/t/p/w154/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg", True, "Action Adventure Fantasy Sci-Fi")
+# addMovie(session, 2231461, "Rampage", "http://image.tmdb.org/t/p/w154/30oXQKwibh0uANGMs0Sytw3uN22.jpg", True, "Action Adventure Sci-Fi")
+# addMovie(session, 6644200, "A Quiet Place", "http://image.tmdb.org/t/p/w154/mrepRTUhNKU70PFf7LNQypbkH00.jpg", True, "Drama Horror Sci-Fi Thriller")
+# addMovie(session, 1677720, "Ready Player One", "http://image.tmdb.org/t/p/w154/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg", False,  "Action Adventure Sci-Fi")
+# addMovie(session, 6791096, "I Feel Pretty", "http://image.tmdb.org/t/p/w154/bZe6x2fKtwVDsAvZQ9fnIJznBrc.jpg", False, "Comedy")
 
 # addCinema(session, "Events Parramatta")
 

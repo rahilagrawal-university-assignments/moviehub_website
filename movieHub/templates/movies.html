@@ -1,52 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles/main.css') }}">
-    <title>MovieHub</title>
-  </head>
-  
-  <body>
-    <form method="POST">
-      <div class="navbar">
-        <input class="b1" value="Sign Up" onclick="window.location.href='http://127.0.0.1:5000/signup'" type="button">
-        <input class="b1" value="Login" onclick="window.location.href='http://127.0.0.1:5000/login'" type="button">
-        <a href="http://127.0.0.1:5000/">
-          <img src="{{ url_for('static', filename='styles/logo.gif') }}"  height="50px" / style="float: left;">
-          <img src="{{ url_for('static', filename='styles/logo2.png') }}"  height="50px" / style="float: left;">
-        </a>
-        <input type="text" placeholder="Search.." name="searchText">
-        <input class="b2" type="submit" name="search" value="Search">
-      </div>
-      <div class="main">
-        Movies List Page<br>
-        {% for movie in movies %}
-            <a href="http://127.0.0.1:5000/moviedetail?id={{movie.imdb_id}}"><img src="{{movie.poster}}"></a>
-        {% endfor %}
-      </div>
-       <!-- Control buttons -->
-    <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-      <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-      <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-      <button class="btn" onclick="filterSelection('colors')"> Colors</button>
-    </div>
-
-    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-    <div class="container">
-      <div class="filterDiv cars">BMW</div>
-      <div class="filterDiv colors fruits">Orange</div>
-      <div class="filterDiv cars">Volvo</div>
-      <div class="filterDiv colors">Red</div>
-      <div class="filterDiv cars animals">Mustang</div>
-      <div class="filterDiv colors">Blue</div>
-      <div class="filterDiv animals">Cat</div>
-      <div class="filterDiv animals">Dog</div>
-      <div class="filterDiv fruits">Melon</div>
-      <div class="filterDiv fruits animals">Kiwi</div>
-      <div class="filterDiv fruits">Banana</div>
-      <div class="filterDiv fruits">Lemon</div>
-      <div class="filterDiv animals">Cow</div>
-    </div> 
-    </form>
-  </body></html>
+<<<<<<< HEAD
+	<head>
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles/main.css') }}">
+		<title>MovieHub</title>
+	</head>
+	
+	<body>
+		<form method="POST">
+			<div class="navbar">
+				<input class="b1" value="Sign Up" onclick="window.location.href='http://127.0.0.1:5000/signup'" type="button">
+				<input class="b1" value="Login" onclick="window.location.href='http://127.0.0.1:5000/login'" type="button">
+				<a href="http://127.0.0.1:5000/">
+					<img src="{{ url_for('static', filename='styles/logo.gif') }}"  height="50px" / style="float: left;">
+					<img src="{{ url_for('static', filename='styles/logo2.png') }}"  height="50px" / style="float: left;">
+				</a>
+				<input type="text" placeholder="Search.." name="searchText">
+				<input class="b2" type="submit" name="search" value="Search">
+			</div>
+			<div class="main">
+				Movies List Page<br>
+				{% for movie in movies %}
+					<a href="http://127.0.0.1:5000/moviedetail?id={{movie.imdb_id}}"><img src="{{movie.poster}}"></a>
+				{% endfor %}
+			</div>
+			<h1>
+			Genres:<br>
+			{% for genre in genres%}
+			 <input type="checkbox" name="genre" value="{{genre}}">{{genre}}<br>
+			{%endfor%}
+		</h1>
+		<input type="submit" value="Apply filters">
+		</form>
+	</body></html>
