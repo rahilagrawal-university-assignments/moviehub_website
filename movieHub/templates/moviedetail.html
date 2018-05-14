@@ -25,18 +25,24 @@
             {{movie["rating"]}}<br>
             {{movie["runtimes"]}}<br>
             {{movie["genres"]}}<br>
-            {{movie.summary()}}<br>
+            {{movie["plot outline"]}}<br>
             <br></br>
-            {% for row in cinemas %}
-                {% for i in row %}
-                    {{ i.name }}
+            <table>
+                {% for i in times %}
+                    <tr>
+                    {% for j in cinemas %}
+                        {% if j.cinema_id == i.cinema_id %}
+                            <td> {{ j.name }} </td>
+                        {% endif %}
+                    {% endfor %}
+                    {% for k in showtimes %}
+                        {% if k.showtime_id == i.showtime_id %}
+                            <td><button type="submit" name="time" value="{{k.time}}"> {{k.time}} </a></td>
+                        {% endif %}
+                    {% endfor %}
+                    </tr>
                 {% endfor %}
-            {% endfor %}
-            {% for row in times %}
-                {% for i in row %}
-                    {{ i.time }}
-                {% endfor %}
-            {% endfor %}
+            </table>
             <br>
             <br>
         <input class="b2" value="Payment" onclick="window.location.href='http://127.0.0.1:5000/payment'" type="button">

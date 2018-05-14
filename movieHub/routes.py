@@ -110,6 +110,7 @@ def moviedetail():
         if request.form["searchText"]:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
+
     ia = IMDb()
     imdb_id = request.args.get("id")
 
