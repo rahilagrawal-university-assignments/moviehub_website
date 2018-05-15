@@ -4,11 +4,12 @@ from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from dbFunctions import *
-import datetime
 from showtimeAPI import *
 from imdb import IMDb
+import random
 
 Base = declarative_base()
+
 
 
 class Movie(Base):
@@ -105,8 +106,7 @@ session = DBSession()
 
 # for k,v in nowShowing.items():
 #     movieInfo = getMovieInfo("tt"+v[0])
-#     if movieInfo is None:
-#         print("none " + k)
+#     print("movieInfo " + k)
 #     nowShowing[k].append(movieInfo["movies"][0]["poster_image"]["image_files"][1]["url"])
     
 #     genreString = ""
@@ -159,11 +159,58 @@ session = DBSession()
 # hoyts = ["Bankstown", "Blacktown", "Broadway", "Charlestown", "Chatswood Westfield", "Eastgardens", "Entertainment Quarter", 
 #             "Erina", "Mt Druitt", "Penrith", "Tweed City", "Warrawong", "Warringah Mall", "Wetherill Park"]
 
+# readingCinemas = ["Auburn", "Charlestown", "Dubbo", "Maitland", "Rhodes", "Rouse Hill"]
+
 # for i in events:
 #     addCinema(session, "Events " + i)
 
 # for i in hoyts:
 #     addCinema(session, "Hoyts " + i)
+
+# for i in readingCinemas:
+#     addCinema(session, "Reading Cinemas " + i)
+
+# times1 = ["10.00 am", "11.00 am", "11.30 am", "12.40 pm", "1.40 pm", "2.20 pm", "3.20 pm", "5.00 pm", "6.00 pm"
+#             "6.30 pm", "7.00 pm", "7.40 pm", "8.10 pm", "9.40 pm", "10.00 pm"]
+
+# times2 = ["10.00 am", "10.40 am", "12.10 pm", "1.10 pm", "3.20 pm", "4.20 pm", "6.30 pm", "7.30 pm", "8.30 pm", "9.30 pm"]
+
+# times3 = ["9.45 am", "11.15 am", "12.45 pm", "3.40 pm", "5.30 pm", "9.30 pm"]
+
+# for i in range(1, len(events)+1):
+#     for j in times1:
+#         addTime(session, nowShowing["Deadpool 2"][0], i, j)
+#         addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
+    
+#     for j in times2:
+#         addTime(session, nowShowing["Life of the Party"][0], i, j)
+#         addTime(session, nowShowing["Tully"][0], i, j)
+
+#     for j in times3:
+#         addTime(session, nowShowing["I Feel Pretty"][0], i, j)
+#         addTime(session, nowShowing["Rampage"][0], i, j)
+
+# for i in range(len(events), len(events) + len(hoyts)+1):
+#     for j in times2:
+#         addTime(session, nowShowing["Deadpool 2"][0], i, j)
+#         addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
+    
+#     for j in times3:
+#         addTime(session, nowShowing["Life of the Party"][0], i, j)
+#         addTime(session, nowShowing["Tully"][0], i, j)
+
+#     for j in times3:
+#         addTime(session, nowShowing["I Feel Pretty"][0], i, j)
+#         addTime(session, nowShowing["Rampage"][0], i, j)
+
+# for i in range(len(events)+len(hoyts), len(events)+len(hoyts)+len(readingCinemas)+1):
+#     for j in times3:
+#         addTime(session, nowShowing["Deadpool 2"][0], i, j)
+#         addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
+    
+#     for j in times3:
+#         addTime(session, nowShowing["Life of the Party"][0], i, j)
+#         addTime(session, nowShowing["Tully"][0], i, j)
 
 
 ###################################################################################################

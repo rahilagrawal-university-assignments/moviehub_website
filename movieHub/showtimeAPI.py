@@ -25,14 +25,13 @@ def get_showtimes(cinema_ids , movie_ids):
         print('HTTP Request failed')
 
 # -33.939961, 151.22966
-def get_theaters(curr_location , distance_to_search):
+def get_theaters():
     try:
         response = requests.get(
             url="https://api.internationalshowtimes.com/v4/cinemas/",
             params={
                 "country" : "AU",
-                "location" : curr_location,
-                "distance" : distance_to_search
+                "location" : "-33.939961, 151.22966"
             },
             headers={
                 "X-API-Key": "jSaZYUE0VbpaOAUawsBmScBjQjXB5Vd8",
@@ -98,4 +97,3 @@ def get_imdbId(movie_ids):
         return loaded_json
     except requests.exceptions.RequestException:
         print('HTTP Request failed')
-
