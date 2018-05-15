@@ -117,6 +117,8 @@ def moviedetail():
     movie = ia.get_movie(imdb_id)
     ia.update(movie)
     
+    cinemaList = []
+    times = []
     # cinema_ids = playsQuery(imdb_id)
     # cinemaList = []
     # timesObj = []
