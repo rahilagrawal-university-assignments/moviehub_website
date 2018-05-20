@@ -71,7 +71,7 @@ def getMovieInfo(imdb_id):
                 "fields" : "genres,poster_image"
             },
             headers={
-                "X-API-Key": "jSaZYUE0VbpaOAUawsBmScBjQjXB5Vd8",
+                "X-API-Key": "SDy88dEwfzVokOFQtE8ZgxqvoIHWKo72",
             },
         )
         json_data = response.text

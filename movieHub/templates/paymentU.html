@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="icon" href="../../../../favicon.ico">
+
+  <title>Payment</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/styles/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../static/styles/form-validation.css" rel="stylesheet">
+  <link href="../static/styles/navbar-top.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+  <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="http://127.0.0.1:5000">MovieHub</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="http://127.0.0.1:5000">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5000/movies">Movies</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0" method="POST">
+          <input class="form-control mr-sm-2" name="searchText" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+      <header>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+          <div class="container d-flex justify-content-between">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+    </nav>
+
+
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h2>Purchase Tickets</h2>
+
+      <p class="lead"> TO -MOVIE NAME- </p>
+      <p class="lead"> WHERE -CINEMA NAME- </p>
+      <p class="lead"> WHEN -TIME- </p>
+    </div>
+
+    <hr class="mb-4">
+
+    <h4 class="mb-3">Tickets</h4>
+    <div class="row needs-validation" novalidate>
+      <div class="col mb-3">
+        <label for="Child Ticket">Child Ticket/s</label>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Quantity
+                </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item">1</a>
+            <a class="dropdown-item">2</a>
+            <a class="dropdown-item">3</a>
+            <a class="dropdown-item">4</a>
+            <a class="dropdown-item">5</a>
+            <a class="dropdown-item">6</a>
+            <a class="dropdown-item">7</a>
+            <a class="dropdown-item">8</a>
+            <a class="dropdown-item">9</a>
+            <a class="dropdown-item">10</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mb-3 floatDiv">
+        <label for="Student Ticket">Student Ticket/s</label>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Quantity
+                </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item">1</a>
+            <a class="dropdown-item">2</a>
+            <a class="dropdown-item">3</a>
+            <a class="dropdown-item">4</a>
+            <a class="dropdown-item">5</a>
+            <a class="dropdown-item">6</a>
+            <a class="dropdown-item">7</a>
+            <a class="dropdown-item">8</a>
+            <a class="dropdown-item">9</a>
+            <a class="dropdown-item">10</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col ">
+        <label for="Adult Ticket">Adult Ticket/s</label>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Quantity
+                </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item">1</a>
+            <a class="dropdown-item">2</a>
+            <a class="dropdown-item">3</a>
+            <a class="dropdown-item">4</a>
+            <a class="dropdown-item">5</a>
+            <a class="dropdown-item">6</a>
+            <a class="dropdown-item">7</a>
+            <a class="dropdown-item">8</a>
+            <a class="dropdown-item">9</a>
+            <a class="dropdown-item">10</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col floatDiv">
+        <label for="Pensioner Ticket">Pensioner Ticket/s</label>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                  Quantity
+                </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item">1</a>
+            <a class="dropdown-item">2</a>
+            <a class="dropdown-item">3</a>
+            <a class="dropdown-item">4</a>
+            <a class="dropdown-item">5</a>
+            <a class="dropdown-item">6</a>
+            <a class="dropdown-item">7</a>
+            <a class="dropdown-item">8</a>
+            <a class="dropdown-item">9</a>
+            <a class="dropdown-item">10</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="mb-6">
+
+    <h4 class="mb-3">Overview</h4>
+    <div class="row">
+      <div class="col-4 floatDiv">
+        <h6>Child</h6>
+      </div>
+      <div class="col-8 floatDiv">
+        <h7>COUNT</h7>
+      </div>
+
+      <div class="col-4 floatDiv">
+        <h6>Student</h6>
+      </div>
+      <div class="col-8 floatDiv">
+        <h7>COUNT</h7>
+      </div>
+
+      <div class="col-4 floatDiv">
+        <h6>Adult</h6>
+      </div>
+      <div class="col-8 floatDiv">
+        <h7>COUNT</h7>
+      </div>
+
+      <div class="col-4 floatDiv">
+        <h6>Pensioner</h6>
+      </div>
+      <div class="col-8 floatDiv">
+        <h7>COUNT</h7>
+      </div>
+        <div class="w-100"></div>
+    </div>
+      <hr class="mb-6">
+
+
+      <h4 class="mb-3">Payment</h4>
+    <div class="row">
+
+      <div class="col-md-6 mb-3">
+        <label for="email">  <h6 class="mb-3">Email</h6></label>
+        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+        <div class="invalid-feedback">
+          Please enter a valid email address so we can send your ticket.
+        </div>
+        <small class="text-muted">Your ticket will be sent to this email</small>
+      </div>
+      <div class="w-100"></div>
+
+      <div class="d-block my-3">
+        <div class="custom-control custom-radio">
+          <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+          <label class="custom-control-label" for="credit">Credit card</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+          <label class="custom-control-label" for="debit">Debit card</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+          <label class="custom-control-label" for="paypal">PayPal</label>
+        </div>
+      </div>
+      <div class="w-100"></div>
+
+        <div class="col-md-6 mb-3">
+          <label for="cc-name">Name on card</label>
+          <input type="text" class="form-control" id="cc-name" placeholder="" required>
+          <small class="text-muted">Full name as displayed on card</small>
+          <div class="invalid-feedback">
+            Name on card is required
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="cc-number">Credit card number</label>
+          <input type="text" class="form-control" id="cc-number" placeholder="" required>
+          <div class="invalid-feedback">
+            Credit card number is required
+          </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-md-3 mb-3">
+          <label for="cc-expiration">Expiration</label>
+          <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+          <div class="invalid-feedback">
+            Expiration date required
+          </div>
+          <small class="text-muted">Expiry Date</small>
+
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="cc-cvv">CVV</label>
+          <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+          <div class="invalid-feedback">
+            Security code required
+          </div>
+            <small class="text-muted">Security number on the back of card</small>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Purchase</button>
+    </div>
+
+
+      <hr class="mb-4">
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="../static/styles/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

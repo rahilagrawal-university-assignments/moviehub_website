@@ -107,7 +107,7 @@ session = DBSession()
 # for k,v in nowShowing.items():
 #     movieInfo = getMovieInfo("tt"+v[0])
 #     print("movieInfo " + k)
-#     nowShowing[k].append(movieInfo["movies"][0]["poster_image"]["image_files"][1]["url"])
+#     nowShowing[k].append(movieInfo["movies"][0]["poster_image"]["image_files"][3]["url"])
     
 #     genreString = ""
 #     for genre in movieInfo["movies"][0]["genres"]:

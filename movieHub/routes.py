@@ -4,7 +4,7 @@ from login import loginUser
 import sqlite3
 from server import app
 from sqlite3 import Error
-from imdb import IMDb
+import imdb
 from dbFunctions import *
 
 @app.route('/', methods=["GET", "POST"])
@@ -14,54 +14,27 @@ def index():
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
     
-    nowShowing = movieQuery(None, True)
-    comingSoon = movieQuery(None, False)
-    return render_template("index.html", nowShowing=nowShowing[0:5], comingSoon=comingSoon[0:5])
-
-
-# @app.route('/movie', methods=["GET" , "POST"])
-# def movie():
-#     ia = IMDb()
-#     imdb_id = request.args.get("id")
-    
-#     movie = ia.get_movie(imdb_id)
-#     ia.update(movie)
-    
-#     cinema_ids = playsQuery(imdb_id)
-#     cinemaList = []
-#     timesObj = []
-#     for i in cinema_ids:
-#         cinemaList.append(cinemaQuery(i.cinema_id))
-#         timesObj.append(timeQuery(i.cinema_id, imdb_id))
-
-#     times = []
-#     for obj in timesObj:
-#         for i in obj:
-#             times.append(showtimesQuery(i.showtime_id))
-
-#     return render_template("movie.html", movie=movie, cinemas=cinemaList, times=times)
+    nowShowing = movieQuery(None, None, True)
+    comingSoon = movieQuery(None, None, False)
+    return render_template("indexU.html", nowShowing=nowShowing[0:6], comingSoon=comingSoon[0:6])
 
 
 @app.route('/login', methods=["GET" , "POST"])
 def login():
     if request.method == "POST":
-        if request.form["searchText"]:
-            searchText = request.form["searchText"]
-            return redirect(url_for('search', searchText=searchText))
-        username = str(request.form["username"])
-        password = str(request.form["password"])
+        try:
+            if request.form["searchText"]:
+                searchText = request.form["searchText"]
+                return redirect(url_for('search', searchText=searchText))
+        except:
+            username = str(request.form["username"])
+            password = str(request.form["password"])
+            
+            if loginUser(username, password):
+                return redirect(url_for("index"))
 
-        if loginUser(username, password):
-            return redirect(url_for("index"))
+    return render_template("loginU.html")
 
-    return render_template("login.html")
-'''
-Created by : Rahil Agrawal
-Modified by : Aditya Karia
-Created At : 11/5/18
-Mock Functions for testing links
-Can be modified by Backend Devs
-'''
 @app.route('/payment', methods=["GET" , "POST"])
 def payment():
     if request.method == "POST":
@@ -81,28 +54,39 @@ def payment():
 
 @app.route('/movies', methods=["GET" , "POST"])
 def movies():
-    movies = movieQuery(None, None)
+    movies = movieQuery(None, None, None)
     genres = ["Action", "Adventure", "Animation", "Biography", "Comedy", "Crime", "Documentary",
                 "Drama", "Family", "Fantasy", "Film Noir", "History", "Horror", "Music", "Musical", 
                 "Mystery", "Romance", "Sci-Fi", "Short", "Sport", "Superhero", "Thriller", "War", "Western"]
     
     if request.method == "POST":
-        if request.form["searchText"]:
-            searchText = request.form["searchText"]
-            return redirect(url_for('search', searchText=searchText))
-        genresSelected = request.form.getlist("genre")
-        
-        updateMovies = []
-        for movie in movies:
-            for i in movie.genres.split():
-                print(i)
-                if i in genresSelected and movie not in updateMovies:
-                    updateMovies.append(movie)
-        print(updateMovies)
-        return render_template("movies.html", movies=updateMovies, genres=genres)
+        try:
+            if request.form["searchText"]:
+                searchText = request.form["searchText"]
+                return redirect(url_for('search', searchText=searchText))
+        except:
+            genresSelected = request.form.getlist("genre")
+            is_showing = request.form.getlist("is_showing")
+            print(is_showing)
+            if is_showing:
+                if is_showing[0] == "nowShowing":
+                    movies = movieQuery(None, None, True)
+                else:
+                    movies = movieQuery(None, None, False)
+
+            updateMovies = []
+            for movie in movies:
+                for i in movie.genres.split():
+                    print(i)
+                    if i in genresSelected and movie not in updateMovies:
+                        updateMovies.append(movie)
+            print(updateMovies)
+            if not updateMovies:
+                updateMovies = movies
+            return render_template("moviesU.html", movies=updateMovies, genres=genres)
 
    
-    return render_template("movies.html", movies=movies, genres=genres)
+    return render_template("moviesU.html", movies=movies, genres=genres)
 
 @app.route('/moviedetail', methods=["GET" , "POST"])
 def moviedetail():
@@ -111,16 +95,17 @@ def moviedetail():
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
 
-    ia = IMDb()
+    ia = imdb.IMDb()
     imdb_id = request.args.get("id")
+
+    moviedb = movieQuery(None, imdb_id, None)
+    moviedb = moviedb[0]
 
     movie = ia.get_movie(imdb_id)
     ia.update(movie)
     
     cinemaList = []
-    times = []
-
-    
+    times = [] 
 
     # cinema_ids = playsQuery(imdb_id)
     # cinemaList = []
@@ -133,20 +118,22 @@ def moviedetail():
     # for obj in timesObj:
     #     for i in obj:
     #         times.append(showtimesQuery(i.showtime_id))
-    return render_template("moviedetail.html", movie=movie, cinemas=cinemaList, times=times)
+    return render_template("moviedetailU.html", movie=movie, moviedb=moviedb, cinemas=cinemaList, times=times)
 
 @app.route('/signup', methods=["GET" , "POST"])
 def signup():
     if request.method == "POST":
-        if request.form["searchText"]:
-            searchText = request.form["searchText"]
-            return redirect(url_for('search', searchText=searchText))
-        username = str(request.form["username"])
-        password = str(request.form["password"])
+        try:
+            if request.form["searchText"]:
+                searchText = request.form["searchText"]
+                return redirect(url_for('search', searchText=searchText))
+        except:
+            username = str(request.form["username"])
+            password = str(request.form["password"])
 
-        if newUser(username, password):
-            return redirect(url_for("index"))
-    return render_template("signup.html")
+            if newUser(username, password):
+                return redirect(url_for("index"))
+    return render_template("signupU.html")
 
 @app.route('/search', methods=["GET", "POST"])
 def search():
@@ -157,6 +144,6 @@ def search():
     searchText = request.args.get("searchText")
     movies = searchQuery(searchText)
     if not movies:
-        return render_template("search.html", searchText=searchText, movies=movies, not_found=1)    
-    return render_template("search.html", searchText=searchText, movies=movies, not_found=0)
+        return render_template("searchU.html", searchText=searchText, movies=movies, not_found=1)    
+    return render_template("searchU.html", searchText=searchText, movies=movies, not_found=0)
 

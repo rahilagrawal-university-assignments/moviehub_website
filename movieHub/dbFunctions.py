@@ -6,13 +6,15 @@ engine = create_engine('sqlite:///movies.db')
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
-def movieQuery(name, is_showing):
-    if name is None and is_showing is None:
+def movieQuery(name, id, is_showing):
+    if name is None and is_showing is None and id is None:
         return session.query(Movie).all()
-    elif name is None and is_showing is not None:
+    elif name is None and is_showing is not None and id is None:
         return session.query(Movie).filter_by(is_showing=is_showing).all()
-    elif name is not None and is_showing is None:
+    elif name is not None and is_showing is None and id is None:
         return session.query(Movie).filter_by(name=name).all()
+    elif name is None and is_showing is None and id is not None:
+        return session.query(Movie).filter_by(imdb_id=id).all()
     else:
         return session.query(Movie).filter_by(name=name, is_showing=is_showing).all()
 
