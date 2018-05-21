@@ -10,8 +10,6 @@ import random
 
 Base = declarative_base()
 
-
-
 class Movie(Base):
     __tablename__ = "movie"
     imdb_id = Column(Integer, primary_key=True, autoincrement=False)
@@ -36,6 +34,8 @@ class User(Base):
     __tablename__ = "users"
     username = Column(String(100), primary_key=True, autoincrement=False)
     password = Column(String(100), nullable=False)
+    firstName = Column(String(100), nullable=False)
+    lastName = Column(String(100), nullable=False)
 
 def addMovie(session, id, name, poster, is_showing, genres):
     new_movie = Movie(imdb_id=id, name=name, poster=poster, is_showing=is_showing, genres=genres)
@@ -170,7 +170,7 @@ session = DBSession()
 # for i in readingCinemas:
 #     addCinema(session, "Reading Cinemas " + i)
 
-# times1 = ["10.00 am", "11.00 am", "11.30 am", "12.40 pm", "1.40 pm", "2.20 pm", "3.20 pm", "5.00 pm", "6.00 pm"
+# times1 = ["10.00 am", "11.00 am", "11.30 am", "12.40 pm", "1.40 pm", "2.20 pm", "3.20 pm", "5.00 pm", "6.00 pm",
 #             "6.30 pm", "7.00 pm", "7.40 pm", "8.10 pm", "9.40 pm", "10.00 pm"]
 
 # times2 = ["10.00 am", "10.40 am", "12.10 pm", "1.10 pm", "3.20 pm", "4.20 pm", "6.30 pm", "7.30 pm", "8.30 pm", "9.30 pm"]

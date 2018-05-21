@@ -16,7 +16,7 @@ def index():
     
     nowShowing = movieQuery(None, None, True)
     comingSoon = movieQuery(None, None, False)
-    return render_template("indexU.html", nowShowing=nowShowing[0:6], comingSoon=comingSoon[0:6])
+    return render_template("indexU.html", nowShowing=nowShowing[8:14], comingSoon=comingSoon[0:6])
 
 
 @app.route('/login', methods=["GET" , "POST"])
@@ -32,8 +32,14 @@ def login():
             
             if loginUser(username, password):
                 return redirect(url_for("index"))
-
+    if current_user.is_authenticated:
+        return redirect(url_for("index"))
     return render_template("loginU.html")
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('index'))
 
 @app.route('/payment', methods=["GET" , "POST"])
 def payment():
@@ -41,15 +47,6 @@ def payment():
         if request.form["searchText"]:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
-        numChild = request.form["child"]
-        numStudent = request.form["student"]
-        numAdult = request.form["adult"]
-        numPensioner = request.form["pensioner"]
-        name = request.form["name"]
-        number = request.form["number"]
-        expiry = request.form["expiry_date"]
-        ccv = request.form["CCV"]
-        return render_template("payment_successful.html")
     return render_template("payment.html")
 
 @app.route('/movies', methods=["GET" , "POST"])
@@ -105,20 +102,14 @@ def moviedetail():
     ia.update(movie)
     
     cinemaList = []
-    times = [] 
+    timesList = timeQuery(imdb_id)
+    
+    for i in timesList:
+        cinema = cinemaQuery(i.cinema_id)
+        if cinema[0] not in cinemaList:
+            cinemaList.append(cinema[0])
 
-    # cinema_ids = playsQuery(imdb_id)
-    # cinemaList = []
-    # timesObj = []
-    # for i in cinema_ids:
-    #     cinemaList.append(cinemaQuery(i.cinema_id))
-    #     timesObj.append(timeQuery(i.cinema_id, imdb_id))
-
-    # times = []
-    # for obj in timesObj:
-    #     for i in obj:
-    #         times.append(showtimesQuery(i.showtime_id))
-    return render_template("moviedetailU.html", movie=movie, moviedb=moviedb, cinemas=cinemaList, times=times)
+    return render_template("moviedetailU.html", movie=movie, moviedb=moviedb, cinemas=cinemaList, times=timesList)
 
 @app.route('/signup', methods=["GET" , "POST"])
 def signup():
@@ -130,9 +121,13 @@ def signup():
         except:
             username = str(request.form["username"])
             password = str(request.form["password"])
-
-            if newUser(username, password):
+            firstName = str(request.form["firstName"])
+            lastName = str(request.form["lastName"])
+            if newUser(username, password, firstName, lastName):
                 return redirect(url_for("index"))
+
+    if current_user.is_authenticated:
+        return redirect(url_for("index"))
     return render_template("signupU.html")
 
 @app.route('/search', methods=["GET", "POST"])

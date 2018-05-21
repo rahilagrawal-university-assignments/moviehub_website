@@ -24,11 +24,11 @@ def cinemaQuery(cinema_id):
 
     return session.query(Cinema).filter_by(cinema_id=cinema_id).all()
 
-def timeQuery(cinema_id, imdb_id):
-    if cinema_id is None or imdb_id is None:
+def timeQuery(imdb_id):
+    if imdb_id is None:
         return session.query(Time).all()
 
-    return session.query(Time).filter_by(cinema_id=cinema_id, imdb_id=imdb_id).all()
+    return session.query(Time).filter_by(imdb_id=imdb_id).all()
 
 def checkUser(username, password):
     result = session.query(User).filter_by(username=username, password=password).all()
@@ -36,13 +36,17 @@ def checkUser(username, password):
         return True
     return False
 
+def getUser(username):
+    result = session.query(User).filter_by(username=username).all()
+    return result
+
 def searchQuery(searchText):
     searchText = "%" + searchText + "%"
     return session.query(Movie).filter(Movie.name.ilike(searchText)).all()
 
-def newUser(username, password):
+def newUser(username, password, firstName, lastName):
     try:
-        new_user = User(username=username, password=password)
+        new_user = User(username=username, password=password, firstName=firstName, lastName=lastName)
         session.add(new_user)
         session.commit()
         return True

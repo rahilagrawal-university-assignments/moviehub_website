@@ -38,6 +38,10 @@
 					<input class="form-control mr-sm-2" name="searchText" type="text" placeholder="Search">
 					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 				</form>
+        {% if current_user.is_authenticated %}
+        &nbsp;&nbsp;&nbsp;
+        <button class="btn btn-primary my-2 my-sm-0" onclick="window.location.href='http://127.0.0.1:5000/logout'">Logout</button>
+        {% endif %}
 			</div>
 			<header>
 	    <meta charset="utf-8">
@@ -60,10 +64,16 @@
         <div class="container">
           <h1 class="jumbotron-heading">MovieHub</h1>
           <p class="lead text-muted">Find the best prices and the most convienent times</p>
-          <p>
-            <a href="http://127.0.0.1:5000/signup" class="btn btn-primary my-2">Sign Up</a>
-            <a href="http://127.0.0.1:5000/login" class="btn btn-secondary my-2">Log In</a>
-          </p>
+          {% if current_user.is_authenticated %}
+            <p>
+              <a href="http://127.0.0.1:5000/signup" class="btn btn-primary my-2">Sign Up</a>
+              <a href="http://127.0.0.1:5000/login" class="btn btn-secondary my-2">Log In</a>
+            </p>
+          {% else %}
+            <p>
+              Welcome, {{current_user.firstName}}
+            </p>
+          {% endif %}
         </div>
       </section>
       <div class="album py-5 bg-light">

@@ -27,7 +27,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="http://127.0.0.1:5000">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -38,6 +38,10 @@
           <input class="form-control mr-sm-2" name="searchText" type="text" placeholder="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+        {% if current_user.is_authenticated %}
+        &nbsp;&nbsp;&nbsp;
+        <button class="btn btn-primary my-2 my-sm-0" onclick="window.location.href='http://127.0.0.1:5000/logout'">Logout</button>
+        {% endif %}
       </div>
       <header>
       <meta charset="utf-8">
@@ -64,7 +68,7 @@
 
       <div class="col">
         <h4 class="mb-3">Personal Details</h4>
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation" novalidate method="POST">
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="firstName">First name</label>
@@ -93,62 +97,14 @@
             </div>
           </div>
 
-          <hr class="mb-4">
+          <div class="mb-3">
+            <label for="password">Password</label>
+            <div class="input-group">
 
-          <h4 class="mb-3">Payment</h4>
-          <small class="text-muted">Leave empty if you wish to add payment details later</small>
-        <div class="row">
-
-
-          <div class="d-block my-3">
-            <div class="custom-control custom-radio">
-              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input">
-              <label class="custom-control-label" for="credit">Credit card</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input">
-              <label class="custom-control-label" for="debit">Debit card</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input">
-              <label class="custom-control-label" for="paypal">PayPal</label>
-            </div>
-          </div>
-
-          <div class="w-100"></div>
-
-            <div class="col-md-6 mb-3">
-              <label for="cc-name">Name on card</label>
-              <input type="text" class="form-control" id="cc-name" placeholder="">
-              <small class="text-muted">Full name as displayed on card</small>
-              <div class="invalid-feedback">
-                Name on card is required
+              <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                Your password is required.
               </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="cc-number">Credit card number</label>
-              <input type="text" class="form-control" id="cc-number" placeholder="">
-              <div class="invalid-feedback">
-                Credit card number is required
-              </div>
-            </div>
-            <div class="w-100"></div>
-            <div class="col-md-3 mb-3">
-              <label for="cc-expiration">Expiration</label>
-              <input type="text" class="form-control" id="cc-expiration" placeholder="">
-              <div class="invalid-feedback">
-                Expiration date required
-              </div>
-              <small class="text-muted">Expiry Date</small>
-
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="cc-cvv">CVV</label>
-              <input type="text" class="form-control" id="cc-cvv" placeholder="">
-              <div class="invalid-feedback">
-                Security code required
-              </div>
-                <small class="text-muted">Security number on the back of card</small>
             </div>
           </div>
           <hr class="mb-4">

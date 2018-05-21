@@ -39,6 +39,10 @@
           <input class="form-control mr-sm-2" name="searchText" type="text" placeholder="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+        {% if current_user.is_authenticated %}
+        &nbsp;&nbsp;&nbsp;
+        <button class="btn btn-primary my-2 my-sm-0" onclick="window.location.href='http://127.0.0.1:5000/logout'">Logout</button>
+        {% endif %}
       </div>
       <header>
       <meta charset="utf-8">
@@ -121,11 +125,20 @@
               <div class="col-md-12">
                 <div class="card mb-4 box-shadow">
                   <div class="card-body">
-                    <h4>Cast</h4>
-                    <p>Cast1</p>
-                    <p>Cast2</p>
-                    <p>Cast3</p>
-                    <p>Cast4</p>
+                    <h4>Times</h4>
+                    <table class="table table-hover table-condensed"">
+                    <tbody>
+                    {% for cinema in cinemas %}
+                        <tr> <td>{{cinema.name}}</td>
+                        {% for time in times %}
+                            {% if time.cinema_id == cinema.cinema_id %}
+                                <td>{{time.showtime}}</td>
+                            {% endif %}
+                        {% endfor %}
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                    </table>
                     <p class="card-text"></p>
                     <div class="d-flex justify-content-between align-items-center">
 
