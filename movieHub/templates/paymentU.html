@@ -26,7 +26,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="http://127.0.0.1:5000">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -63,9 +63,9 @@
       <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
       <h2>Purchase Tickets</h2>
 
-      <p class="lead"> TO -MOVIE NAME- </p>
-      <p class="lead"> WHERE -CINEMA NAME- </p>
-      <p class="lead"> WHEN -TIME- </p>
+      <p class="lead"> TO {{movie}} </p>
+      <p class="lead"> WHERE {{cinema}} </p>
+      <p class="lead"> WHEN {{time}} </p>
     </div>
 
     <hr class="mb-4">
@@ -75,20 +75,20 @@
       <div class="col mb-3">
         <label for="Child Ticket">Child Ticket/s</label>
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Quantity
-                </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item">1</a>
-            <a class="dropdown-item">2</a>
-            <a class="dropdown-item">3</a>
-            <a class="dropdown-item">4</a>
-            <a class="dropdown-item">5</a>
-            <a class="dropdown-item">6</a>
-            <a class="dropdown-item">7</a>
-            <a class="dropdown-item">8</a>
-            <a class="dropdown-item">9</a>
-            <a class="dropdown-item">10</a>
+          <div class="form-group">
+            <select name="child" required>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
           </div>
         </div>
       </div>

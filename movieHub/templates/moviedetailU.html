@@ -28,7 +28,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="http://127.0.0.1:5000">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -126,19 +126,21 @@
                 <div class="card mb-4 box-shadow">
                   <div class="card-body">
                     <h4>Times</h4>
-                    <table class="table table-hover table-condensed"">
+                    <div class="table-responsive">
+                    <table class="table table-hover table-condensed">
                     <tbody>
                     {% for cinema in cinemas %}
                         <tr> <td>{{cinema.name}}</td>
                         {% for time in times %}
                             {% if time.cinema_id == cinema.cinema_id %}
-                                <td>{{time.showtime}}</td>
+                                <td><a href="http://127.0.0.1:5000/payment?cinema={{cinema.name}}&time={{time.showtime}}&movie={{movie['title']}}" class="btn btn-basic" role="button">{{time.showtime}}</a></td>
                             {% endif %}
                         {% endfor %}
                         </tr>
                     {% endfor %}
                     </tbody>
                     </table>
+                    </div>
                     <p class="card-text"></p>
                     <div class="d-flex justify-content-between align-items-center">
 

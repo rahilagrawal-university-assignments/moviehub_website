@@ -66,12 +66,12 @@
           <p class="lead text-muted">Find the best prices and the most convienent times</p>
           {% if current_user.is_authenticated %}
             <p>
-              <a href="http://127.0.0.1:5000/signup" class="btn btn-primary my-2">Sign Up</a>
-              <a href="http://127.0.0.1:5000/login" class="btn btn-secondary my-2">Log In</a>
+              Welcome, {{current_user.firstName}}
             </p>
           {% else %}
             <p>
-              Welcome, {{current_user.firstName}}
+              <a href="http://127.0.0.1:5000/signup" class="btn btn-primary my-2">Sign Up</a>
+              <a href="http://127.0.0.1:5000/login" class="btn btn-secondary my-2">Log In</a>
             </p>
           {% endif %}
         </div>

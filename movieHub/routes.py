@@ -47,7 +47,10 @@ def payment():
         if request.form["searchText"]:
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
-    return render_template("payment.html")
+    cinema = request.args.get("cinema")
+    time = request.args.get("time")
+    movie = request.args.get("movie")
+    return render_template("paymentU.html", cinema=cinema, time=time, movie=movie)
 
 @app.route('/movies', methods=["GET" , "POST"])
 def movies():
