@@ -1,0 +1,95 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+html	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^<html lang="en">$/;"	function	line:2
+head	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^<head>$/;"	function	line:4
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <meta charset="utf-8">$/;"	function	line:5
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">$/;"	function	line:6
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <meta name="description" content="">$/;"	function	line:7
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <meta name="author" content="">$/;"	function	line:8
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <link rel="icon" href="..\/..\/..\/..\/favicon.ico">$/;"	function	line:10
+title	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <title>Settings<\/title>$/;"	function	line:12
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <link href="..\/static\/styles\/css\/bootstrap.min.css" rel="stylesheet">$/;"	function	line:15
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <link href="..\/static\/styles\/navbar-top.css" rel="stylesheet">$/;"	function	line:18
+body	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^<body>$/;"	function	line:22
+nav	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">$/;"	function	line:24
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <a class="navbar-brand" href="#">MovieHub<\/a>$/;"	function	line:25
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:26
+span	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^				<span class="navbar-toggler-icon"><\/span>$/;"	function	line:27
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <div class="collapse navbar-collapse" id="navbarCollapse">$/;"	function	line:29
+ul	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <ul class="navbar-nav mr-auto">$/;"	function	line:30
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <li class="nav-item active">$/;"	function	line:31
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <a class="nav-link" href="#">Home <span class="sr-only">(current)<\/span><\/a>$/;"	function	line:32
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <li class="nav-item">$/;"	function	line:34
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:35
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <li class="nav-item">$/;"	function	line:37
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:38
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <li class="nav-item">$/;"	function	line:40
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:41
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <li class="nav-item">$/;"	function	line:43
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:44
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <li class="nav-item">$/;"	function	line:46
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:47
+form	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <form class="form-inline mt-2 mt-md-0">$/;"	function	line:50
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">$/;"	function	line:51
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search<\/button>$/;"	function	line:52
+header	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <header>$/;"	function	line:55
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <meta charset="utf-8">$/;"	function	line:56
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">$/;"	function	line:57
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <div class="navbar navbar-dark bg-dark box-shadow">$/;"	function	line:60
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <div class="container d-flex justify-content-between">$/;"	function	line:61
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:62
+span	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^	            <span class="navbar-toggler-icon"><\/span>$/;"	function	line:63
+main	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <main role="main ">$/;"	function	line:70
+section	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <section class=" text-center bg-light">$/;"	function	line:71
+br	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <br>$/;"	function	line:72
+br	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <br>$/;"	function	line:73
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <div class="container">$/;"	function	line:74
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <h1 class="jumbotron-heading">Settings<\/h1>$/;"	function	line:75
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <p class="lead  text-center text-muted">Welcome to your settings. Where viewing, updating and deleting your records is simple.<\/p>$/;"	function	line:79
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <div class="album py-5 bg-light">$/;"	function	line:81
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <div class="container">$/;"	function	line:82
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <div class="row">$/;"	function	line:85
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <div class="col-md-8">$/;"	function	line:87
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                        <div class="row">$/;"	function	line:89
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                            <div class="col-md-12">$/;"	function	line:91
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                <div class="card mb-4 box-shadow">$/;"	function	line:93
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                    <div class="card-body">$/;"	function	line:94
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h2 class="jumbotron-heading">General Information<\/h2>$/;"	function	line:95
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>First Name<\/h5>$/;"	function	line:97
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:98
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>Last Name<\/h5>$/;"	function	line:99
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:100
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>Username<\/h5>$/;"	function	line:101
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:102
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>Email<\/h5>$/;"	function	line:103
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:104
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>Main Mobile Number<\/h5>$/;"	function	line:105
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:106
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>Secondary Mobile Number (Optional)<\/h5>$/;"	function	line:107
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:108
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                            <div class="w-100"><\/div>$/;"	function	line:116
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                            <div class="col-md-12">$/;"	function	line:117
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                <div class="card mb-4 box-shadow">$/;"	function	line:119
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                    <div class="card-body">$/;"	function	line:120
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h2 class="jumbotron-heading">Personal Information<\/h2>$/;"	function	line:121
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>Card Details<\/h5>$/;"	function	line:123
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:124
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                            <div class="w-100"><\/div>$/;"	function	line:130
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <div class="col-md-4">$/;"	function	line:135
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                        <div class="card mb-4 box-shadow">$/;"	function	line:136
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                            <img class="card-img-top" src="https:\/\/www.vccircle.com\/wp-content\/uploads\/2017\/03\/default-profile.png" alt="Card image cap" style="width: 220 height:326">$/;"	function	line:137
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                            <div class="card-body">$/;"	function	line:138
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                <p class="card-text text-center">Username<\/p>$/;"	function	line:139
+footer	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <footer class="text-muted">$/;"	function	line:149
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <div class="container">$/;"	function	line:150
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <p class="float-right">$/;"	function	line:151
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <a href="#">Back to top<\/a>$/;"	function	line:152
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <script src="https:\/\/code.jquery.com\/jquery-3.3.1.slim.min.js" integrity="sha384-q8i\/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"><\/script>$/;"	function	line:160
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <script>$/;"	function	line:161
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <script src="..\/static\/styles\/js\/vendor\/popper.min.js"><\/script>$/;"	function	line:164
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <script src="..\/static\/styles\/js\/bootstrap.min.js"><\/script>$/;"	function	line:165
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <script src="..\/static\/js\/vendor\/holder.min.js"><\/script>$/;"	function	line:166

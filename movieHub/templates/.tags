@@ -1,0 +1,620 @@
+html	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^<html lang="en">$/;"	function	line:2
+head	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^<head>$/;"	function	line:4
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <meta charset="utf-8">$/;"	function	line:5
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">$/;"	function	line:6
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <meta name="description" content="">$/;"	function	line:7
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <meta name="author" content="">$/;"	function	line:8
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <link rel="icon" href="..\/..\/..\/..\/favicon.ico">$/;"	function	line:10
+title	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <title>MOVIETITLE<\/title>$/;"	function	line:12
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <link href="..\/static\/styles\/css\/bootstrap.min.css" rel="stylesheet">$/;"	function	line:15
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <link href="..\/static\/styles\/navbar-top.css" rel="stylesheet">$/;"	function	line:18
+body	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^<body>$/;"	function	line:22
+nav	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">$/;"	function	line:24
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^    <a class="navbar-brand" href="#">MovieHub<\/a>$/;"	function	line:25
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:26
+span	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^				<span class="navbar-toggler-icon"><\/span>$/;"	function	line:27
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^    <div class="collapse navbar-collapse" id="navbarCollapse">$/;"	function	line:29
+ul	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^      <ul class="navbar-nav mr-auto">$/;"	function	line:30
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <li class="nav-item active">$/;"	function	line:31
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^          <a class="nav-link" href="#">Home <span class="sr-only">(current)<\/span><\/a>$/;"	function	line:32
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <li class="nav-item">$/;"	function	line:34
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^          <a class="nav-link" href="#">Link<\/a>$/;"	function	line:35
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <li class="nav-item">$/;"	function	line:37
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^          <a class="nav-link" href="#">Link<\/a>$/;"	function	line:38
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <li class="nav-item">$/;"	function	line:40
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^          <a class="nav-link" href="#">Link<\/a>$/;"	function	line:41
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <li class="nav-item">$/;"	function	line:43
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^          <a class="nav-link" href="#">Link<\/a>$/;"	function	line:44
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <li class="nav-item">$/;"	function	line:46
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^          <a class="nav-link" href="#">Link<\/a>$/;"	function	line:47
+form	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^      <form class="form-inline mt-2 mt-md-0">$/;"	function	line:50
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">$/;"	function	line:51
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search<\/button>$/;"	function	line:52
+header	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^    <header>$/;"	function	line:55
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^      <meta charset="utf-8">$/;"	function	line:56
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">$/;"	function	line:57
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^      <div class="navbar navbar-dark bg-dark box-shadow">$/;"	function	line:60
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <div class="container d-flex justify-content-between">$/;"	function	line:61
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:62
+span	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^	            <span class="navbar-toggler-icon"><\/span>$/;"	function	line:63
+main	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <main role="main ">$/;"	function	line:70
+section	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^    <section class=" text-center bg-light">$/;"	function	line:71
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^      <div class="container">$/;"	function	line:73
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <h1 class="jumbotron-heading">MOVIENAME<\/h1>$/;"	function	line:74
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^    <p class="lead  text-center text-muted">Short Description of the Movie.<\/p>$/;"	function	line:78
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^    <div class="album py-5 bg-light">$/;"	function	line:81
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^      <div class="container">$/;"	function	line:82
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <h2 class="jumbotron-heading">Information<\/h2>$/;"	function	line:83
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <div class="row">$/;"	function	line:86
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^          <div class="col-md-8">$/;"	function	line:87
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^            <div class="row">$/;"	function	line:89
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^              <div class="col-md-12">$/;"	function	line:91
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                <div class="card mb-4 box-shadow">$/;"	function	line:92
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                  <div class="card-body">$/;"	function	line:93
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <h4>Ratings<\/h4>$/;"	function	line:94
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <p>MovieHub:<\/p>$/;"	function	line:95
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <p>IMDb<\/p>$/;"	function	line:96
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <p>Rotten Tomatoes<\/p>$/;"	function	line:97
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <p>Metascore<\/p>$/;"	function	line:98
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                      <h4>Your Rating<\/h4>$/;"	function	line:101
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                      <p>* * * * *<\/p>$/;"	function	line:102
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <p class="card-text"><\/p>$/;"	function	line:103
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <div class="d-flex justify-content-between align-items-center">$/;"	function	line:104
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^              <div class="w-100"><\/div>$/;"	function	line:110
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^              <div class="col-md-12">$/;"	function	line:111
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                <div class="card mb-4 box-shadow">$/;"	function	line:112
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                  <div class="card-body">$/;"	function	line:113
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <h4>Cast<\/h4>$/;"	function	line:114
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <p>Cast1<\/p>$/;"	function	line:115
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <p>Cast2<\/p>$/;"	function	line:116
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <p>Cast3<\/p>$/;"	function	line:117
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <p>Cast4<\/p>$/;"	function	line:118
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <p class="card-text"><\/p>$/;"	function	line:119
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <div class="d-flex justify-content-between align-items-center">$/;"	function	line:120
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^              <div class="w-100"><\/div>$/;"	function	line:126
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^              <div class="col-md-12">$/;"	function	line:127
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                <div class="card mb-4 box-shadow">$/;"	function	line:128
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                  <div class="card-body">$/;"	function	line:129
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <h4>Ticket times<\/h4>$/;"	function	line:130
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <p class="card-text"><\/p>$/;"	function	line:132
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <div class="d-flex justify-content-between align-items-center">$/;"	function	line:133
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^              <div class="w-100"><\/div>$/;"	function	line:139
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^          <div class="col-md-4">$/;"	function	line:144
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^            <div class="card mb-4 box-shadow">$/;"	function	line:145
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^              <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 220 height:326">$/;"	function	line:146
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^              <div class="card-body">$/;"	function	line:147
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                <p class="card-text">Short Description 2<\/p>$/;"	function	line:148
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                <div class="d-flex justify-content-between align-items-center">$/;"	function	line:149
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                  <div class="btn-group">$/;"	function	line:150
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:151
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit<\/button>$/;"	function	line:152
+small	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^                  <small class="text-muted">RunTime2<\/small>$/;"	function	line:154
+footer	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <footer class="text-muted">$/;"	function	line:163
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^    <div class="container">$/;"	function	line:164
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^      <p class="float-right">$/;"	function	line:165
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^        <a href="#">Back to top<\/a>$/;"	function	line:166
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <script src="https:\/\/code.jquery.com\/jquery-3.3.1.slim.min.js" integrity="sha384-q8i\/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"><\/script>$/;"	function	line:174
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <script>$/;"	function	line:175
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <script src="..\/static\/styles\/js\/vendor\/popper.min.js"><\/script>$/;"	function	line:178
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <script src="..\/static\/styles\/js\/bootstrap.min.js"><\/script>$/;"	function	line:179
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/movieU.html	/^  <script src="..\/static\/js\/vendor\/holder.min.js"><\/script>$/;"	function	line:180
+html	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^<html lang="en">$/;"	function	line:2
+head	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^<head>$/;"	function	line:4
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <meta charset="utf-8">$/;"	function	line:5
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">$/;"	function	line:6
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <meta name="description" content="">$/;"	function	line:7
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <meta name="author" content="">$/;"	function	line:8
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <link rel="icon" href="..\/..\/..\/..\/favicon.ico">$/;"	function	line:10
+title	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <title>Settings<\/title>$/;"	function	line:12
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <link href="..\/static\/styles\/css\/bootstrap.min.css" rel="stylesheet">$/;"	function	line:15
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <link href="..\/static\/styles\/navbar-top.css" rel="stylesheet">$/;"	function	line:18
+body	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^<body>$/;"	function	line:22
+nav	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">$/;"	function	line:24
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^        <a class="navbar-brand" href="#">MovieHub<\/a>$/;"	function	line:25
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:26
+span	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^				<span class="navbar-toggler-icon"><\/span>$/;"	function	line:27
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^        <div class="collapse navbar-collapse" id="navbarCollapse">$/;"	function	line:29
+ul	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^            <ul class="navbar-nav mr-auto">$/;"	function	line:30
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                <li class="nav-item active">$/;"	function	line:31
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                    <a class="nav-link" href="#">Home <span class="sr-only">(current)<\/span><\/a>$/;"	function	line:32
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                <li class="nav-item">$/;"	function	line:34
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:35
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                <li class="nav-item">$/;"	function	line:37
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:38
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                <li class="nav-item">$/;"	function	line:40
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:41
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                <li class="nav-item">$/;"	function	line:43
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:44
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                <li class="nav-item">$/;"	function	line:46
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:47
+form	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^            <form class="form-inline mt-2 mt-md-0">$/;"	function	line:50
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">$/;"	function	line:51
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search<\/button>$/;"	function	line:52
+header	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^        <header>$/;"	function	line:55
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^            <meta charset="utf-8">$/;"	function	line:56
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">$/;"	function	line:57
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^            <div class="navbar navbar-dark bg-dark box-shadow">$/;"	function	line:60
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                <div class="container d-flex justify-content-between">$/;"	function	line:61
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:62
+span	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^	            <span class="navbar-toggler-icon"><\/span>$/;"	function	line:63
+main	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <main role="main ">$/;"	function	line:70
+section	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^        <section class=" text-center bg-light">$/;"	function	line:71
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^        <div class="container">$/;"	function	line:73
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^          <h1 class="jumbotron-heading">Profile Page<\/h1>$/;"	function	line:74
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^      <p class="lead  text-center text-muted">Welcome to your profile. Where viewing, updating and deleting your records is simple.<\/p>$/;"	function	line:78
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^        <div class="album py-5 bg-light">$/;"	function	line:80
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^            <div class="container">$/;"	function	line:81
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                <div class="row">$/;"	function	line:84
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                    <div class="col-md-8">$/;"	function	line:86
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                        <div class="row">$/;"	function	line:88
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                            <div class="col-md-12">$/;"	function	line:90
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                <div class="card mb-4 box-shadow">$/;"	function	line:92
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                    <div class="card-body">$/;"	function	line:93
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <h2 class="jumbotron-heading">General Information<\/h2>$/;"	function	line:94
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <h5>First Name<\/h5>$/;"	function	line:96
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <p>.....<\/p>$/;"	function	line:97
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <h5>Last Name<\/h5>$/;"	function	line:98
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <p>.....<\/p>$/;"	function	line:99
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <h5>Username<\/h5>$/;"	function	line:100
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <p>.....<\/p>$/;"	function	line:101
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <h5>Email<\/h5>$/;"	function	line:102
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <p>.....<\/p>$/;"	function	line:103
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <h5>Main Mobile Number<\/h5>$/;"	function	line:104
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <p>.....<\/p>$/;"	function	line:105
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <h5>Secondary Mobile Number (Opto)<\/h5>$/;"	function	line:106
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <p>.....<\/p>$/;"	function	line:107
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                            <div class="w-100"><\/div>$/;"	function	line:115
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                            <div class="col-md-12">$/;"	function	line:116
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                <div class="card mb-4 box-shadow">$/;"	function	line:117
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                    <div class="card-body">$/;"	function	line:118
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <h2 class="jumbotron-heading">Personal Information<\/h2>$/;"	function	line:119
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <p>Cast1<\/p>$/;"	function	line:121
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <p>Cast2<\/p>$/;"	function	line:122
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <p>Cast3<\/p>$/;"	function	line:123
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <p>Cast4<\/p>$/;"	function	line:124
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <p class="card-text"><\/p>$/;"	function	line:125
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <div class="d-flex justify-content-between align-items-center">$/;"	function	line:126
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                            <div class="w-100"><\/div>$/;"	function	line:132
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                            <div class="col-md-12">$/;"	function	line:133
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                <div class="card mb-4 box-shadow">$/;"	function	line:134
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                    <div class="card-body">$/;"	function	line:135
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <h4>Ticket times<\/h4>$/;"	function	line:136
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <p class="card-text"><\/p>$/;"	function	line:138
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                        <div class="d-flex justify-content-between align-items-center">$/;"	function	line:139
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                            <div class="w-100"><\/div>$/;"	function	line:145
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                    <div class="col-md-4">$/;"	function	line:150
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                        <div class="card mb-4 box-shadow">$/;"	function	line:151
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                            <img class="card-img-top" src="https:\/\/www.vccircle.com\/wp-content\/uploads\/2017\/03\/default-profile.png" alt="Card image cap" style="width: 220 height:326">$/;"	function	line:152
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                            <div class="card-body">$/;"	function	line:153
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                                <p class="card-text text-center">Username<\/p>$/;"	function	line:154
+footer	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <footer class="text-muted">$/;"	function	line:164
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^        <div class="container">$/;"	function	line:165
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^            <p class="float-right">$/;"	function	line:166
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^                <a href="#">Back to top<\/a>$/;"	function	line:167
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <script src="https:\/\/code.jquery.com\/jquery-3.3.1.slim.min.js" integrity="sha384-q8i\/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"><\/script>$/;"	function	line:175
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <script>$/;"	function	line:176
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <script src="..\/static\/styles\/js\/vendor\/popper.min.js"><\/script>$/;"	function	line:179
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <script src="..\/static\/styles\/js\/bootstrap.min.js"><\/script>$/;"	function	line:180
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/Settings.html	/^    <script src="..\/static\/js\/vendor\/holder.min.js"><\/script>$/;"	function	line:181
+html	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^<html lang="en">$/;"	function	line:2
+head	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^<head>$/;"	function	line:4
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <meta charset="utf-8">$/;"	function	line:5
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">$/;"	function	line:6
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <meta name="description" content="">$/;"	function	line:7
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <meta name="author" content="">$/;"	function	line:8
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <link rel="icon" href="..\/..\/..\/..\/favicon.ico">$/;"	function	line:9
+title	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <title>Sign Up<\/title>$/;"	function	line:11
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <link href="..\/static\/styles\/css\/bootstrap.min.css" rel="stylesheet">$/;"	function	line:14
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <link href="..\/static\/styles\/form-validation.css" rel="stylesheet">$/;"	function	line:17
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <link href="..\/static\/styles\/navbar-top.css" rel="stylesheet">$/;"	function	line:18
+body	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^<body class="bg-light">$/;"	function	line:21
+nav	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">$/;"	function	line:22
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^    <a class="navbar-brand" href="#">MovieHub<\/a>$/;"	function	line:23
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:24
+span	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <span class="navbar-toggler-icon"><\/span>$/;"	function	line:25
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^    <div class="collapse navbar-collapse" id="navbarCollapse">$/;"	function	line:27
+ul	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^      <ul class="navbar-nav mr-auto">$/;"	function	line:28
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <li class="nav-item active">$/;"	function	line:29
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <a class="nav-link" href="#">Home <span class="sr-only">(current)<\/span><\/a>$/;"	function	line:30
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <li class="nav-item">$/;"	function	line:32
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <a class="nav-link" href="#">Link<\/a>$/;"	function	line:33
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <li class="nav-item">$/;"	function	line:35
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <a class="nav-link" href="#">Link<\/a>$/;"	function	line:36
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <li class="nav-item">$/;"	function	line:38
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <a class="nav-link" href="#">Link<\/a>$/;"	function	line:39
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <li class="nav-item">$/;"	function	line:41
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <a class="nav-link" href="#">Link<\/a>$/;"	function	line:42
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <li class="nav-item">$/;"	function	line:44
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <a class="nav-link" href="#">Link<\/a>$/;"	function	line:45
+form	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^      <form class="form-inline mt-2 mt-md-0">$/;"	function	line:48
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">$/;"	function	line:49
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search<\/button>$/;"	function	line:50
+header	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^    <header>$/;"	function	line:53
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^      <meta charset="utf-8">$/;"	function	line:54
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">$/;"	function	line:55
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^      <div class="navbar navbar-dark bg-dark box-shadow">$/;"	function	line:58
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <div class="container d-flex justify-content-between">$/;"	function	line:59
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:60
+span	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <span class="navbar-toggler-icon"><\/span>$/;"	function	line:61
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <div class="container">$/;"	function	line:68
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^    <div class="py-5 text-center">$/;"	function	line:69
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^      <h2>Sign Up<\/h2>$/;"	function	line:70
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^    <div class="row">$/;"	function	line:73
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^      <div class="col">$/;"	function	line:75
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <h4 class="mb-3">Personal Details<\/h4>$/;"	function	line:76
+form	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <form class="needs-validation" novalidate>$/;"	function	line:77
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <div class="row">$/;"	function	line:78
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="col-md-6 mb-3">$/;"	function	line:79
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <label for="firstName">First name<\/label>$/;"	function	line:80
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required>$/;"	function	line:81
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <div class="invalid-feedback">$/;"	function	line:82
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="col-md-6 mb-3">$/;"	function	line:86
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <label for="lastName">Last name<\/label>$/;"	function	line:87
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required>$/;"	function	line:88
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <div class="invalid-feedback">$/;"	function	line:89
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <div class="mb-3">$/;"	function	line:95
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <label for="username">Username<\/label>$/;"	function	line:96
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="input-group">$/;"	function	line:97
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <input type="text" class="form-control" id="username" placeholder="Username" required>$/;"	function	line:99
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <div class="invalid-feedback" style="width: 100%;">$/;"	function	line:100
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <div class="mb-3">$/;"	function	line:106
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <label for="username">Email<\/label>$/;"	function	line:107
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="input-group">$/;"	function	line:108
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <input type="email" class="form-control" id="username" placeholder="emailaddress@example.com" required>$/;"	function	line:110
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <div class="invalid-feedback" style="width: 100%;">$/;"	function	line:111
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <div class="mb-3">$/;"	function	line:117
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <label for="phone">Mobile Number<\/label>$/;"	function	line:118
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <input type="text" class="form-control" id="phone" placeholder="0123 456789" required>$/;"	function	line:119
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="invalid-feedback">$/;"	function	line:120
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <div class="mb-3">$/;"	function	line:125
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <label for="phone1">Secondary Phone<span class="text-muted"> (Optional)<\/span><\/label>$/;"	function	line:126
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <input type="text" class="form-control" id="phone1" placeholder="0123 456789">$/;"	function	line:127
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <div class="row">$/;"	function	line:130
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="col-md-5 mb-3">$/;"	function	line:131
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <label for="ticket">Ticket Type<\/label>$/;"	function	line:132
+select	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <select class="custom-select d-block w-100" id="ticket" required>$/;"	function	line:133
+option	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^                  <option value="">Choose...<\/option>$/;"	function	line:134
+option	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^                  <option>'straya<\/option>$/;"	function	line:135
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <div class="invalid-feedback">$/;"	function	line:137
+hr	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <hr class="mb-4">$/;"	function	line:143
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <h4 class="mb-3">Payment<\/h4>$/;"	function	line:145
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <div class="row">$/;"	function	line:146
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <div class="d-block my-3">$/;"	function	line:149
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="custom-control custom-radio">$/;"	function	line:150
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>$/;"	function	line:151
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <label class="custom-control-label" for="credit">Credit card<\/label>$/;"	function	line:152
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="custom-control custom-radio">$/;"	function	line:154
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>$/;"	function	line:155
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <label class="custom-control-label" for="debit">Debit card<\/label>$/;"	function	line:156
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="custom-control custom-radio">$/;"	function	line:158
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>$/;"	function	line:159
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <label class="custom-control-label" for="paypal">PayPal<\/label>$/;"	function	line:160
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <div class="w-100"><\/div>$/;"	function	line:164
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="col-md-6 mb-3">$/;"	function	line:166
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <label for="cc-name">Name on card<\/label>$/;"	function	line:167
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <input type="text" class="form-control" id="cc-name" placeholder="" required>$/;"	function	line:168
+small	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <small class="text-muted">Full name as displayed on card<\/small>$/;"	function	line:169
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <div class="invalid-feedback">$/;"	function	line:170
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="col-md-6 mb-3">$/;"	function	line:174
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <label for="cc-number">Credit card number<\/label>$/;"	function	line:175
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <input type="text" class="form-control" id="cc-number" placeholder="" required>$/;"	function	line:176
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <div class="invalid-feedback">$/;"	function	line:177
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="w-100"><\/div>$/;"	function	line:181
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="col-md-3 mb-3">$/;"	function	line:182
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <label for="cc-expiration">Expiration<\/label>$/;"	function	line:183
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>$/;"	function	line:184
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <div class="invalid-feedback">$/;"	function	line:185
+small	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <small class="text-muted">Expiry Date<\/small>$/;"	function	line:188
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^            <div class="col-md-3 mb-3">$/;"	function	line:191
+label	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <label for="cc-cvv">CVV<\/label>$/;"	function	line:192
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>$/;"	function	line:193
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^              <div class="invalid-feedback">$/;"	function	line:194
+small	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^                <small class="text-muted">Security number on the back of card<\/small>$/;"	function	line:197
+hr	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <hr class="mb-4">$/;"	function	line:200
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout<\/button>$/;"	function	line:201
+footer	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^    <footer class="my-5 pt-5 text-muted text-center text-small">$/;"	function	line:206
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^      <p class="mb-1">&copy; 2017-2018 Company Name<\/p>$/;"	function	line:207
+ul	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^      <ul class="list-inline">$/;"	function	line:208
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <li class="list-inline-item"><a href="#">Privacy<\/a><\/li>$/;"	function	line:209
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <li class="list-inline-item"><a href="#">Terms<\/a><\/li>$/;"	function	line:210
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^        <li class="list-inline-item"><a href="#">Support<\/a><\/li>$/;"	function	line:211
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <script src="https:\/\/code.jquery.com\/jquery-3.3.1.slim.min.js" integrity="sha384-q8i\/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"><\/script>$/;"	function	line:219
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <script>$/;"	function	line:220
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <script src="..\/..\/assets\/js\/vendor\/popper.min.js"><\/script>$/;"	function	line:223
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <script src="..\/..\/dist\/js\/bootstrap.min.js"><\/script>$/;"	function	line:224
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <script src="..\/..\/assets\/js\/vendor\/holder.min.js"><\/script>$/;"	function	line:225
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/signupU.html	/^  <script>$/;"	function	line:226
+html	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^<html lang="en">$/;"	function	line:2
+head	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^<head>$/;"	function	line:4
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^    <meta charset="utf-8">$/;"	function	line:5
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">$/;"	function	line:6
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^    <meta name="description" content="">$/;"	function	line:7
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^    <meta name="author" content="">$/;"	function	line:8
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^    <link rel="icon" href="..\/..\/..\/..\/favicon.ico">$/;"	function	line:10
+title	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^    <title>Profile<\/title>$/;"	function	line:12
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^    <link href="..\/static\/styles\/css\/bootstrap.min.css" rel="stylesheet">$/;"	function	line:15
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^    <link href="..\/static\/styles\/navbar-top.css" rel="stylesheet">$/;"	function	line:18
+body	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^<body>$/;"	function	line:22
+nav	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">$/;"	function	line:24
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^        <a class="navbar-brand" href="#">MovieHub<\/a>$/;"	function	line:25
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:26
+span	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^				<span class="navbar-toggler-icon"><\/span>$/;"	function	line:27
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^        <div class="collapse navbar-collapse" id="navbarCollapse">$/;"	function	line:29
+ul	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <ul class="navbar-nav mr-auto">$/;"	function	line:30
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <li class="nav-item active">$/;"	function	line:31
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <a class="nav-link" href="#">Home <span class="sr-only">(current)<\/span><\/a>$/;"	function	line:32
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <li class="nav-item">$/;"	function	line:34
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:35
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <li class="nav-item">$/;"	function	line:37
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:38
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <li class="nav-item">$/;"	function	line:40
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:41
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <li class="nav-item">$/;"	function	line:43
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:44
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <li class="nav-item">$/;"	function	line:46
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:47
+form	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <form class="form-inline mt-2 mt-md-0">$/;"	function	line:50
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">$/;"	function	line:51
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search<\/button>$/;"	function	line:52
+header	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^        <header>$/;"	function	line:55
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <meta charset="utf-8">$/;"	function	line:56
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">$/;"	function	line:57
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <div class="navbar navbar-dark bg-dark box-shadow">$/;"	function	line:60
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="container d-flex justify-content-between">$/;"	function	line:61
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:62
+span	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^	            <span class="navbar-toggler-icon"><\/span>$/;"	function	line:63
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^    <div class="album py-5 bg-light">$/;"	function	line:74
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^        <div class="container">$/;"	function	line:76
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <div class="row">$/;"	function	line:77
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col">$/;"	function	line:78
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <h1 class="jumbotron-heading text-center">Welcome ((Name of User))<\/h1>$/;"	function	line:79
+br	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <br>$/;"	function	line:82
+br	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <br>$/;"	function	line:83
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <h4>Already Viewed<\/h4>$/;"	function	line:85
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <div class="row">$/;"	function	line:87
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:89
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:90
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:91
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:92
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:93
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:94
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:95
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:96
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:103
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:104
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:105
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:106
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:107
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:108
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:109
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:110
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:117
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:118
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:119
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:120
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:121
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:122
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:123
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:124
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:132
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:133
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:134
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:135
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:136
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:137
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:138
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:139
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:146
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:147
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:148
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:149
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:150
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:151
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:152
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:153
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:160
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:161
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:162
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:163
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:164
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:165
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:166
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:167
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:174
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:175
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:176
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:177
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:178
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:179
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:180
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:181
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:188
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:189
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:190
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:191
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:192
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:193
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:194
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:195
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:202
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:203
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:204
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:205
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:206
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:207
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:208
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:209
+br	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <br>$/;"	function	line:218
+br	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <br>$/;"	function	line:219
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <h4>Recommended<\/h4>$/;"	function	line:220
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <div class="row">$/;"	function	line:222
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:224
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:225
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:226
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:227
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:228
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:229
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:230
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:231
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:238
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:239
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:240
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:241
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:242
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:243
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:244
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:245
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:252
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:253
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:254
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:255
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:256
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:257
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:258
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:259
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:267
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:268
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:269
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:270
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:271
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:272
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:273
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:274
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:281
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:282
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:283
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:284
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:285
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:286
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:287
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:288
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:295
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:296
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:297
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:298
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:299
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:300
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:301
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:302
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:309
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:310
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:311
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:312
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:313
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:314
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:315
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:316
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:323
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:324
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:325
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:326
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:327
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:328
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:329
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:330
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="col-md-2">$/;"	function	line:337
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <div class="card mb-4 box-shadow">$/;"	function	line:338
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <img class="card-img-top" src="https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Avengers_Infinity_War_poster.jpg" alt="Card image cap" style="width: 100 height:225">$/;"	function	line:339
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <div class="card-body">$/;"	function	line:340
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <p class="card-text">Movie Name<\/p>$/;"	function	line:341
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                            <div class="d-flex justify-content-between align-items-center">$/;"	function	line:342
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                <div class="btn-group">$/;"	function	line:343
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                                    <button type="button" class="btn btn-sm btn-outline-secondary">View<\/button>$/;"	function	line:344
+footer	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <footer class="text-muted">$/;"	function	line:356
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                <div class="container">$/;"	function	line:357
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                    <p class="float-right">$/;"	function	line:358
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^                        <a href="#">Back to top<\/a>$/;"	function	line:359
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <script src="https:\/\/code.jquery.com\/jquery-3.3.1.slim.min.js" integrity="sha384-q8i\/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"><\/script>$/;"	function	line:367
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <script>$/;"	function	line:368
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <script src="..\/static\/styles\/js\/vendor\/popper.min.js"><\/script>$/;"	function	line:371
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <script src="..\/static\/styles\/js\/bootstrap.min.js"><\/script>$/;"	function	line:372
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/profilePageU.html	/^            <script src="..\/static\/js\/vendor\/holder.min.js"><\/script>$/;"	function	line:373
+html	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^<html lang="en">$/;"	function	line:2
+head	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^<head>$/;"	function	line:4
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <meta charset="utf-8">$/;"	function	line:5
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">$/;"	function	line:6
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <meta name="description" content="">$/;"	function	line:7
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <meta name="author" content="">$/;"	function	line:8
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <link rel="icon" href="..\/..\/..\/..\/favicon.ico">$/;"	function	line:10
+title	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <title>Settings<\/title>$/;"	function	line:12
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <link href="..\/static\/styles\/css\/bootstrap.min.css" rel="stylesheet">$/;"	function	line:15
+link	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <link href="..\/static\/styles\/navbar-top.css" rel="stylesheet">$/;"	function	line:18
+body	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^<body>$/;"	function	line:22
+nav	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">$/;"	function	line:24
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <a class="navbar-brand" href="#">MovieHub<\/a>$/;"	function	line:25
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:26
+span	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^				<span class="navbar-toggler-icon"><\/span>$/;"	function	line:27
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <div class="collapse navbar-collapse" id="navbarCollapse">$/;"	function	line:29
+ul	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <ul class="navbar-nav mr-auto">$/;"	function	line:30
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <li class="nav-item active">$/;"	function	line:31
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <a class="nav-link" href="#">Home <span class="sr-only">(current)<\/span><\/a>$/;"	function	line:32
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <li class="nav-item">$/;"	function	line:34
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:35
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <li class="nav-item">$/;"	function	line:37
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:38
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <li class="nav-item">$/;"	function	line:40
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:41
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <li class="nav-item">$/;"	function	line:43
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:44
+li	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <li class="nav-item">$/;"	function	line:46
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <a class="nav-link" href="#">Link<\/a>$/;"	function	line:47
+form	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <form class="form-inline mt-2 mt-md-0">$/;"	function	line:50
+input	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">$/;"	function	line:51
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search<\/button>$/;"	function	line:52
+header	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <header>$/;"	function	line:55
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <meta charset="utf-8">$/;"	function	line:56
+meta	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">$/;"	function	line:57
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <div class="navbar navbar-dark bg-dark box-shadow">$/;"	function	line:60
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <div class="container d-flex justify-content-between">$/;"	function	line:61
+button	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:62
+span	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^	            <span class="navbar-toggler-icon"><\/span>$/;"	function	line:63
+main	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <main role="main ">$/;"	function	line:70
+section	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <section class=" text-center bg-light">$/;"	function	line:71
+br	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <br>$/;"	function	line:72
+br	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <br>$/;"	function	line:73
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <div class="container">$/;"	function	line:74
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <h1 class="jumbotron-heading">Settings<\/h1>$/;"	function	line:75
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <p class="lead  text-center text-muted">Welcome to your settings. Where viewing, updating and deleting your records is simple.<\/p>$/;"	function	line:79
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <div class="album py-5 bg-light">$/;"	function	line:81
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <div class="container">$/;"	function	line:82
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <div class="row">$/;"	function	line:85
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <div class="col-md-8">$/;"	function	line:87
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                        <div class="row">$/;"	function	line:89
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                            <div class="col-md-12">$/;"	function	line:91
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                <div class="card mb-4 box-shadow">$/;"	function	line:93
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                    <div class="card-body">$/;"	function	line:94
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h2 class="jumbotron-heading">General Information<\/h2>$/;"	function	line:95
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>First Name<\/h5>$/;"	function	line:97
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:98
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>Last Name<\/h5>$/;"	function	line:99
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:100
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>Username<\/h5>$/;"	function	line:101
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:102
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>Email<\/h5>$/;"	function	line:103
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:104
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>Main Mobile Number<\/h5>$/;"	function	line:105
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:106
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>Secondary Mobile Number (Optional)<\/h5>$/;"	function	line:107
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:108
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                            <div class="w-100"><\/div>$/;"	function	line:116
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                            <div class="col-md-12">$/;"	function	line:117
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                <div class="card mb-4 box-shadow">$/;"	function	line:119
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                    <div class="card-body">$/;"	function	line:120
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h2 class="jumbotron-heading">Personal Information<\/h2>$/;"	function	line:121
+h	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <h5>Card Details<\/h5>$/;"	function	line:123
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                        <p>.....<\/p>$/;"	function	line:124
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                            <div class="w-100"><\/div>$/;"	function	line:130
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                    <div class="col-md-4">$/;"	function	line:135
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                        <div class="card mb-4 box-shadow">$/;"	function	line:136
+img	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                            <img class="card-img-top" src="https:\/\/www.vccircle.com\/wp-content\/uploads\/2017\/03\/default-profile.png" alt="Card image cap" style="width: 220 height:326">$/;"	function	line:137
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                            <div class="card-body">$/;"	function	line:138
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                                <p class="card-text text-center">Username<\/p>$/;"	function	line:139
+footer	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <footer class="text-muted">$/;"	function	line:149
+div	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^        <div class="container">$/;"	function	line:150
+p	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^            <p class="float-right">$/;"	function	line:151
+a	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^                <a href="#">Back to top<\/a>$/;"	function	line:152
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <script src="https:\/\/code.jquery.com\/jquery-3.3.1.slim.min.js" integrity="sha384-q8i\/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"><\/script>$/;"	function	line:160
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <script>$/;"	function	line:161
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <script src="..\/static\/styles\/js\/vendor\/popper.min.js"><\/script>$/;"	function	line:164
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <script src="..\/static\/styles\/js\/bootstrap.min.js"><\/script>$/;"	function	line:165
+script	/home/erkie/Desktop/workspace/Seng2021Proj/movieHub/templates/SettingsU.html	/^    <script src="..\/static\/js\/vendor\/holder.min.js"><\/script>$/;"	function	line:166
