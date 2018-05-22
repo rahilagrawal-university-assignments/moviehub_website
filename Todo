@@ -1,10 +1,13 @@
 PAGES TO DO
-  - movie.html
-  - movieDetail.html
-  - movies.html
-  - paymentSuccessful.html
-  - search.html
-  -signUp.html
+  - movie.html              DONE
+  - movieDetail.html        DONE
+  - movies.html             DONE
+  - paymentSuccessful.html  DONE
+  - search.html             DONE
+  -signUp.html              DONE
 
 - Get the right colour scheme (Change relevant css files)
 -Need to add links
+
+- Add an update feature to update records in the setting page  (Pop up)
+- Add an Delete feature in the setting page
