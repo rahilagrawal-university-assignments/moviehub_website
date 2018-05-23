@@ -32,6 +32,11 @@
           <li class="nav-item">
             <a class="nav-link" href="http://127.0.0.1:5000/movies">Movies</a>
           </li>
+          {% if current_user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5000/profile">Profile</a>
+            </li>
+          {% endif %}
         </ul>
         <form class="form-inline mt-2 mt-md-0" method="POST">
           <input class="form-control mr-sm-2" name="searchText" type="text" placeholder="Search">
@@ -69,130 +74,82 @@
     </div>
 
     <hr class="mb-4">
-
+    <form method="POST">
     <h4 class="mb-3">Tickets</h4>
     <div class="row needs-validation" novalidate>
       <div class="col mb-3">
         <label for="Child Ticket">Child Ticket/s</label>
-        <div class="dropdown">
-          <div class="form-group">
-            <select name="child" required>
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-          </div>
-        </div>
+        <br>
+        <select name="child" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
       </div>
 
       <div class="col mb-3 floatDiv">
-        <label for="Student Ticket">Student Ticket/s</label>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Quantity
-                </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item">1</a>
-            <a class="dropdown-item">2</a>
-            <a class="dropdown-item">3</a>
-            <a class="dropdown-item">4</a>
-            <a class="dropdown-item">5</a>
-            <a class="dropdown-item">6</a>
-            <a class="dropdown-item">7</a>
-            <a class="dropdown-item">8</a>
-            <a class="dropdown-item">9</a>
-            <a class="dropdown-item">10</a>
-          </div>
-        </div>
+        <label for="Student Ticket">Student Ticket/s</label><br>
+        <select name="student" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
       </div>
 
 
 
       <div class="col ">
-        <label for="Adult Ticket">Adult Ticket/s</label>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Quantity
-                </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item">1</a>
-            <a class="dropdown-item">2</a>
-            <a class="dropdown-item">3</a>
-            <a class="dropdown-item">4</a>
-            <a class="dropdown-item">5</a>
-            <a class="dropdown-item">6</a>
-            <a class="dropdown-item">7</a>
-            <a class="dropdown-item">8</a>
-            <a class="dropdown-item">9</a>
-            <a class="dropdown-item">10</a>
-          </div>
-        </div>
+        <label for="Adult Ticket">Adult Ticket/s</label><br>
+        <select name="adult" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
       </div>
 
       <div class="col floatDiv">
-        <label for="Pensioner Ticket">Pensioner Ticket/s</label>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                  Quantity
-                </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item">1</a>
-            <a class="dropdown-item">2</a>
-            <a class="dropdown-item">3</a>
-            <a class="dropdown-item">4</a>
-            <a class="dropdown-item">5</a>
-            <a class="dropdown-item">6</a>
-            <a class="dropdown-item">7</a>
-            <a class="dropdown-item">8</a>
-            <a class="dropdown-item">9</a>
-            <a class="dropdown-item">10</a>
-          </div>
-        </div>
+        <label for="Pensioner Ticket">Pensioner Ticket/s</label><br>
+        <select name="pensioner" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
       </div>
 
     </div>
 
-    <hr class="mb-6">
-
-    <h4 class="mb-3">Overview</h4>
-    <div class="row">
-      <div class="col-4 floatDiv">
-        <h6>Child</h6>
-      </div>
-      <div class="col-8 floatDiv">
-        <h7>COUNT</h7>
-      </div>
-
-      <div class="col-4 floatDiv">
-        <h6>Student</h6>
-      </div>
-      <div class="col-8 floatDiv">
-        <h7>COUNT</h7>
-      </div>
-
-      <div class="col-4 floatDiv">
-        <h6>Adult</h6>
-      </div>
-      <div class="col-8 floatDiv">
-        <h7>COUNT</h7>
-      </div>
-
-      <div class="col-4 floatDiv">
-        <h6>Pensioner</h6>
-      </div>
-      <div class="col-8 floatDiv">
-        <h7>COUNT</h7>
-      </div>
-        <div class="w-100"></div>
-    </div>
       <hr class="mb-6">
 
 
@@ -201,7 +158,7 @@
 
       <div class="col-md-6 mb-3">
         <label for="email">  <h6 class="mb-3">Email</h6></label>
-        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
         <div class="invalid-feedback">
           Please enter a valid email address so we can send your ticket.
         </div>
@@ -261,7 +218,7 @@
       </div>
       <button class="btn btn-primary btn-lg btn-block" type="submit">Purchase</button>
     </div>
-
+  </form>
 
       <hr class="mb-4">
 

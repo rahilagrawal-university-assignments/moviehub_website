@@ -10,6 +10,8 @@ class User(UserMixin):
         self.lastName = lastName
     def get_id(self):
         return self.username        
+    def get_name(self):
+        return self.firstName + " " + self.lastName
 
 def loginUser(username, password):
     if checkUser(username, password):
@@ -36,4 +38,4 @@ def load_user(username):
 
 @login_manager.unauthorized_handler
 def unauthorized_handler():
-    return redirect(url_for('login'))
+    return redirect(url_for('index'))

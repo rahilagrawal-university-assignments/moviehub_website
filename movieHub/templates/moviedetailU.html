@@ -17,6 +17,10 @@
   <!-- Custom styles -->
   <link href="../static/styles/navbar-top.css" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -34,6 +38,11 @@
           <li class="nav-item">
             <a class="nav-link" href="http://127.0.0.1:5000/movies">Movies</a>
           </li>
+          {% if current_user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5000/profile">Profile</a>
+            </li>
+          {% endif %}
         </ul>
         <form class="form-inline mt-2 mt-md-0" method="POST">
           <input class="form-control mr-sm-2" name="searchText" type="text" placeholder="Search">
@@ -127,13 +136,17 @@
                   <div class="card-body">
                     <h4>Times</h4>
                     <div class="table-responsive">
-                    <table class="table table-hover table-condensed">
+                    <table id="times" class="table table-hover table-condensed" data-show-toggle="true">
                     <tbody>
                     {% for cinema in cinemas %}
                         <tr> <td>{{cinema.name}}</td>
                         {% for time in times %}
                             {% if time.cinema_id == cinema.cinema_id %}
-                                <td><a href="http://127.0.0.1:5000/payment?cinema={{cinema.name}}&time={{time.showtime}}&movie={{movie['title']}}" class="btn btn-basic" role="button">{{time.showtime}}</a></td>
+                                <td>
+                                
+                                  <button class="btn btn-basic" onclick="window.location.href='http://127.0.0.1:5000/payment?cinema={{cinema.name}}&time={{time.showtime}}&movie={{moviedb.name}}'" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content" data-html="true">{{time.showtime}}</button>
+                                
+                                </td>
                             {% endif %}
                         {% endfor %}
                         </tr>
@@ -160,6 +173,7 @@
           </div>
 
         </div>
+
   </main>
 
   <footer class="text-muted">
@@ -169,6 +183,15 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover();  
+      $('#times').on('all.bs.table', function (e, name, args) {
+          $('[data-toggle="popover"]').popover();  
+      });
+    });
+  </script>
 
   <!-- Bootstrap core JavaScript
     ================================================== -->

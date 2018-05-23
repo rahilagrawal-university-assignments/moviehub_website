@@ -44,13 +44,24 @@ def logout():
 @app.route('/payment', methods=["GET" , "POST"])
 def payment():
     if request.method == "POST":
-        if request.form["searchText"]:
-            searchText = request.form["searchText"]
-            return redirect(url_for('search', searchText=searchText))
+        try:
+            if request.form["searchText"]:
+                searchText = request.form["searchText"]
+                return redirect(url_for('search', searchText=searchText))
+        except:
+            return redirect(url_for("paymentSuccessful"))
     cinema = request.args.get("cinema")
     time = request.args.get("time")
     movie = request.args.get("movie")
     return render_template("paymentU.html", cinema=cinema, time=time, movie=movie)
+
+@app.route('/paymentSuccessful', methods=["GET" , "POST"])
+def paymentSuccessful():
+    if request.method == "POST":
+        if request.form["searchText"]:
+            searchText = request.form["searchText"]
+            return redirect(url_for('search', searchText=searchText))
+    return render_template("payment_successful.html")
 
 @app.route('/movies', methods=["GET" , "POST"])
 def movies():
@@ -67,22 +78,27 @@ def movies():
         except:
             genresSelected = request.form.getlist("genre")
             is_showing = request.form.getlist("is_showing")
-            print(is_showing)
+            
             if is_showing:
                 if is_showing[0] == "nowShowing":
                     movies = movieQuery(None, None, True)
                 else:
                     movies = movieQuery(None, None, False)
 
+            if not genresSelected and is_showing:
+                updateMovies = movies
+                return render_template("moviesU.html", movies=updateMovies, genres=genres)
+            elif not genresSelected and not is_showing:
+                return render_template("moviesU.html", movies=movies, genres=genres)
             updateMovies = []
             for movie in movies:
-                for i in movie.genres.split():
-                    print(i)
-                    if i in genresSelected and movie not in updateMovies:
-                        updateMovies.append(movie)
+                count = 0
+                for i in genresSelected:
+                    if i in movie.genres.split():
+                        count += 1
+                if count == len(genresSelected):
+                    updateMovies.append(movie)
             print(updateMovies)
-            if not updateMovies:
-                updateMovies = movies
             return render_template("moviesU.html", movies=updateMovies, genres=genres)
 
    
@@ -145,3 +161,22 @@ def search():
         return render_template("searchU.html", searchText=searchText, movies=movies, not_found=1)    
     return render_template("searchU.html", searchText=searchText, movies=movies, not_found=0)
 
+@login_required
+@app.route('/profile', methods=["GET", "POST"])
+def profile():
+    if request.method == "POST":
+        if request.form["searchText"]:
+            searchText = request.form["searchText"]
+            return redirect(url_for('search', searchText=searchText))
+    movies = movieQuery(None, None, None)
+    seen = []
+    recommend = []
+    for movie in movies:
+        for i in movie.genres.split():
+            if i in ["Action", "Adventure"]:
+                if movie.is_showing and movie not in seen: 
+                    seen.append(movie)
+                elif not movie.is_showing and movie not in recommend:
+                    recommend.append(movie)
+
+    return render_template("profilePage.html", seen=seen, recommended=recommend)
