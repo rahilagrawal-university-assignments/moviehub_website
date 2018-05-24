@@ -6,6 +6,7 @@ from server import app
 from sqlite3 import Error
 import imdb
 from dbFunctions import *
+import datetime
 
 @app.route('/', methods=["GET", "POST"])
 def index():
@@ -14,9 +15,14 @@ def index():
             searchText = request.form["searchText"]
             return redirect(url_for('search', searchText=searchText))
     
-    nowShowing = movieQuery(None, None, True)
+    topMovies = ["Avengers: Infinity War", "Deadpool 2", "Life of the Party", "Solo", "Bookshop", "Tully"]
+
+
+    nowShowing = []
+    for i in topMovies:
+        nowShowing = nowShowing + searchQuery(i)
     comingSoon = movieQuery(None, None, False)
-    return render_template("indexU.html", nowShowing=nowShowing[8:14], comingSoon=comingSoon[0:6])
+    return render_template("indexU.html", nowShowing=nowShowing, comingSoon=comingSoon[0:6])
 
 
 @app.route('/login', methods=["GET" , "POST"])
@@ -114,12 +120,26 @@ def moviedetail():
     ia = imdb.IMDb()
     imdb_id = request.args.get("id")
 
+    checked = []
+    try:
+        numChecked = int(request.args.get("checked"))
+        for i in range(0, numChecked):
+            checked.append(1)
+    except:
+        pass
+
     moviedb = movieQuery(None, imdb_id, None)
     moviedb = moviedb[0]
 
+    currentDate = datetime.date.today()
+    dates = []
+    dates.append(currentDate)
+    for i in range(1, 7):
+        dates.append(currentDate + datetime.timedelta(days=i))
+    
+
     movie = ia.get_movie(imdb_id)
     ia.update(movie)
-    
     cinemaList = []
     timesList = timeQuery(imdb_id)
     
@@ -128,7 +148,7 @@ def moviedetail():
         if cinema[0] not in cinemaList:
             cinemaList.append(cinema[0])
 
-    return render_template("moviedetailU.html", movie=movie, moviedb=moviedb, cinemas=cinemaList, times=timesList)
+    return render_template("moviedetailU.html", movie=movie, moviedb=moviedb, cinemas=cinemaList, times=timesList, checked=checked)
 
 @app.route('/signup', methods=["GET" , "POST"])
 def signup():
@@ -180,3 +200,4 @@ def profile():
                     recommend.append(movie)
 
     return render_template("profilePage.html", seen=seen, recommended=recommend)
+

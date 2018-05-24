@@ -2,25 +2,31 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <!--Icon at the top of the tab-->
-  <link rel="icon" href="../../../../favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--Icon at the top of the tab-->
+    <link rel="icon" href="../../../../favicon.ico">
 
-  <title>{{movie["title"]}}</title>
+    <title>{{movie["title"]}}</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="../static/styles/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../static/styles/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles -->
-  <link href="../static/styles/navbar-top.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="../static/styles/navbar-top.css" rel="stylesheet">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .checked {
+        color: orange;
+    }
+    .unchecked {
+        color: black;
+    }
+    </style>  
+
 </head>
 
 <body>
@@ -89,8 +95,21 @@
               <div class="col-md-12">
                 <div class="card mb-4 box-shadow">
                   <div class="card-body">
-                    
+                    {% if movie["rating"] %}
                     <p>IMDb rating: {{movie["rating"]}}</p>
+                    {% endif %}
+                    {% if movie["top 250 rank"] %}
+                    <p>IMDb Rank: {{movie["top 250 rank"]}}</p>
+                    {% endif %}
+                    <p>My rating:   
+                      {% for i in range(1, 6) %}
+                        {% if checked[i-1] == 1 %}
+                          <a href="http://127.0.0.1:5000/moviedetail?id={{moviedb.imdb_id}}&checked={{i}}"><span class="fa fa-star checked"></span></a>
+                        {% else %}
+                          <a href="http://127.0.0.1:5000/moviedetail?id={{moviedb.imdb_id}}&checked={{i}}"><span class="fa fa-star unchecked"></span></a>
+                        {% endif %}
+                      {% endfor %}
+                    </p>
                     <p>Year: {{movie["year"]}}</p>
                     <p>Runtime: {{movie["runtimes"][0]}} mins</p>
                     <p>Genres: 
@@ -107,6 +126,7 @@
                     {{movie["writer"][movie["writer"]|length-1]["name"]}}
                     </p>
                     <p>{{movie["plot outline"]}}</p>
+
 
                     <p class="card-text"></p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -132,27 +152,47 @@
               </div>
               <div class="w-100"></div>
               <div class="col-md-12">
-                <div class="card mb-4 box-shadow">
+                <div class="card mb-4 box-shadow" style="width: 150%">
                   <div class="card-body">
                     <h4>Times</h4>
+                    {% if times %}
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for cinemas">
+                    <style type="text/css">
+                      #myInput {
+                        background-image: url('https://www.w3schools.com/css/searchicon.png'); /* Add a search icon to input */
+                        background-position: 10px 12px; /* Position the search icon */
+                        background-repeat: no-repeat; /* Do not repeat the icon image */
+                        width: 100%; /* Full-width */
+                        font-size: 16px; /* Increase font-size */
+                        padding: 12px 20px 12px 40px; /* Add some padding */
+                        border: 1px solid #ddd; /* Add a grey border */
+                        margin-bottom: 12px; /* Add some space below the input */
+                      }
+                    </style>
+                    {% endif %}
                     <div class="table-responsive">
-                    <table id="times" class="table table-hover table-condensed" data-show-toggle="true">
+                    {% if times %}
+                    <table id="times" class="table table-hover" data-show-toggle="true">
                     <tbody>
-                    {% for cinema in cinemas %}
-                        <tr> <td>{{cinema.name}}</td>
-                        {% for time in times %}
-                            {% if time.cinema_id == cinema.cinema_id %}
-                                <td>
-                                
-                                  <button class="btn btn-basic" onclick="window.location.href='http://127.0.0.1:5000/payment?cinema={{cinema.name}}&time={{time.showtime}}&movie={{moviedb.name}}'" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content" data-html="true">{{time.showtime}}</button>
-                                
-                                </td>
-                            {% endif %}
-                        {% endfor %}
-                        </tr>
-                    {% endfor %}
+
+                      {% for cinema in cinemas %}
+                          <tr> <td>{{cinema.name}}</td>
+                          {% for time in times %}
+                              {% if time.cinema_id == cinema.cinema_id %}
+                                  <td>
+                                  
+                                    <button class="btn btn-basic" onclick="window.location.href='http://127.0.0.1:5000/payment?cinema={{cinema.name}}&time={{time.showtime}}&movie={{moviedb.name}}'">{{time.showtime}}</button>
+                                      Child: ${{range(7,11) | random}} Adult: ${{range(15,21)|random}} Student: ${{range(11,15)|random}} Pensioner: ${{range(11,15)|random}}
+                                  </td>
+                              {% endif %}
+                          {% endfor %}
+                          </tr>
+                      {% endfor %}
                     </tbody>
                     </table>
+                    {% else %}
+                    <h6>No times available</h6>
+                    {% endif %}
                     </div>
                     <p class="card-text"></p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -166,14 +206,13 @@
 
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <img class="card-img-top" src="{{moviedb.poster}}" alt="Card image cap" style="width: 220 height:326">
             </div>
           </div>
-
         </div>
-
   </main>
 
   <footer class="text-muted">
@@ -184,14 +223,6 @@
     </div>
   </footer>
 
-  <script>
-    $(function () {
-      $('[data-toggle="popover"]').popover();  
-      $('#times').on('all.bs.table', function (e, name, args) {
-          $('[data-toggle="popover"]').popover();  
-      });
-    });
-  </script>
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -204,5 +235,30 @@
   <script src="../static/styles/js/bootstrap.min.js"></script>
   <script src="../static/js/vendor/holder.min.js"></script>
 </body>
+
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("times");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
 
 </html>

@@ -96,7 +96,8 @@ session = DBSession()
 
 # nowShowing = {"Deadpool 2" : [], "Avengers: Infinity War" : [], "Life of the Party" : [], "Breath" : [], "I Feel Pretty" : [], "Tully" : [],
 #                 "Crooked House" : [], "A Quiet Place" : [], "Chappaquiddick" : [], "Rampage" : [], "Peter Rabbit" : [],
-#                 "Super Troopers 2" : [], "Sherlock Gnomes" : [], "Black Panther" : [], "Blockers" : [], "Ready Player One" : [], "Truth or Dare" : []}
+#                 "Super Troopers 2" : [], "Sherlock Gnomes" : [], "Black Panther" : [], "Blockers" : [], "Ready Player One" : [], "Truth or Dare" : [], 
+#                 "Solo: A Star Wars Story" : [],  "Duck Duck Goose" : [], "The Bookshop" : [], "Cargo" : [],}
 # ia = IMDb()
 
 # for k in nowShowing.keys():
@@ -120,10 +121,6 @@ session = DBSession()
 #     addMovie(session, v[0], k, v[1], True, v[2])
 
 # comingSoon = {
-#     "Cargo" : [],
-#     "The Bookshop" : [],
-#     "Duck Duck Goose" : [],
-#     "Solo: A Star Wars Story" : [],
 #     "Ocean's 8" : [],
 #     "Jurrasic World: Fallen Kingdom" : [],
 #     "Gringo" : [],
@@ -131,6 +128,8 @@ session = DBSession()
 #     "Incredibles 2" : [],
 #     "Skyscraper" : [],
 #     "The Equalizer 2" : [], 
+#     "Kodachrome" : [],
+#     "Upgrade" : [],
 # }
 
 # for k in comingSoon.keys():
@@ -152,7 +151,7 @@ session = DBSession()
 #     addMovie(session, v[0], k, v[1], False, v[2])
 
 # events = ["Beverly Hills", "Burwood", "Castle Hill", "Cronulla", "George Street", "Hornsby", "Kotara",
-#             "Liverpool", "Miranda", "Newcastle", "Shellharbour", "Tuggerah", "Bondi Junction", "Campbelltown"
+#             "Liverpool", "Miranda", "Newcastle", "Shellharbour", "Tuggerah", "Bondi Junction", "Campbelltown",
 #             "Coffs Harbour", "Drive in Blacktown", "Glendale", "Hurstville", "Lismore", "Macquarie", "Moonlight Cinema Sydney",
 #             "Parramatta", "Top Ryde City", "Wollongong"]
 
@@ -178,40 +177,142 @@ session = DBSession()
 # times3 = ["9.45 am", "11.15 am", "12.45 pm", "3.40 pm", "5.30 pm", "9.30 pm"]
 
 # for i in range(1, len(events)+1):
-#     for j in times1:
-#         addTime(session, nowShowing["Deadpool 2"][0], i, j)
-#         addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
-    
-#     for j in times2:
-#         addTime(session, nowShowing["Life of the Party"][0], i, j)
-#         addTime(session, nowShowing["Tully"][0], i, j)
+#     randInt = random.randint(1,3)
 
-#     for j in times3:
-#         addTime(session, nowShowing["I Feel Pretty"][0], i, j)
-#         addTime(session, nowShowing["Rampage"][0], i, j)
+#     if randInt == 1:
+#         for j in times1:
+#             addTime(session, nowShowing["Deadpool 2"][0], i, j)
+#             addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
+#     elif randInt == 2:
+#         for j in times2:
+#             addTime(session, nowShowing["Deadpool 2"][0], i, j)
+#             addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
+#     else:
+#         for j in times3:
+#             addTime(session, nowShowing["Deadpool 2"][0], i, j)
+#             addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
+
+#     randInt = random.randint(1,3)
+
+#     if randInt == 1:
+#         for j in times1:
+#             addTime(session, nowShowing["Solo: A Star Wars Story"][0], i, j)
+#             addTime(session, nowShowing["The Bookshop"][0], i, j)
+#     elif randInt == 2:
+#         for j in times2:
+#             addTime(session, nowShowing["Solo: A Star Wars Story"][0], i, j)
+#             addTime(session, nowShowing["The Bookshop"][0], i, j)
+#     else:
+#         for j in times3:
+#             addTime(session, nowShowing["Solo: A Star Wars Story"][0], i, j)
+#             addTime(session, nowShowing["The Bookshop"][0], i, j)
+    
+#     randInt = random.randint(1,3)
+
+#     if randInt == 1:
+#         for j in times1:
+#             addTime(session, nowShowing["Tully"][0], i, j)
+#             addTime(session, nowShowing["Life of the Party"][0], i, j)
+#     elif randInt == 2:
+#         for j in times2:
+#             addTime(session, nowShowing["Tully"][0], i, j)
+#             addTime(session, nowShowing["Life of the Party"][0], i, j)
+#     else:
+#         for j in times3:
+#             addTime(session, nowShowing["Tully"][0], i, j)
+#             addTime(session, nowShowing["Life of the Party"][0], i, j)
 
 # for i in range(len(events), len(events) + len(hoyts)+1):
-#     for j in times2:
-#         addTime(session, nowShowing["Deadpool 2"][0], i, j)
-#         addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
-    
-#     for j in times3:
-#         addTime(session, nowShowing["Life of the Party"][0], i, j)
-#         addTime(session, nowShowing["Tully"][0], i, j)
+#     randInt = random.randint(1,3)
 
-#     for j in times3:
-#         addTime(session, nowShowing["I Feel Pretty"][0], i, j)
-#         addTime(session, nowShowing["Rampage"][0], i, j)
+#     if randInt == 1:
+#         for j in times1:
+#             addTime(session, nowShowing["Deadpool 2"][0], i, j)
+#             addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
+#     elif randInt == 2:
+#         for j in times2:
+#             addTime(session, nowShowing["Deadpool 2"][0], i, j)
+#             addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
+#     else:
+#         for j in times3:
+#             addTime(session, nowShowing["Deadpool 2"][0], i, j)
+#             addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
+
+#     randInt = random.randint(1,3)
+
+#     if randInt == 1:
+#         for j in times1:
+#             addTime(session, nowShowing["Solo: A Star Wars Story"][0], i, j)
+#             addTime(session, nowShowing["The Bookshop"][0], i, j)
+#     elif randInt == 2:
+#         for j in times2:
+#             addTime(session, nowShowing["Solo: A Star Wars Story"][0], i, j)
+#             addTime(session, nowShowing["The Bookshop"][0], i, j)
+#     else:
+#         for j in times3:
+#             addTime(session, nowShowing["Solo: A Star Wars Story"][0], i, j)
+#             addTime(session, nowShowing["The Bookshop"][0], i, j)
+    
+#     randInt = random.randint(1,3)
+
+#     if randInt == 1:
+#         for j in times1:
+#             addTime(session, nowShowing["Tully"][0], i, j)
+#             addTime(session, nowShowing["Life of the Party"][0], i, j)
+#     elif randInt == 2:
+#         for j in times2:
+#             addTime(session, nowShowing["Tully"][0], i, j)
+#             addTime(session, nowShowing["Life of the Party"][0], i, j)
+#     else:
+#         for j in times3:
+#             addTime(session, nowShowing["Tully"][0], i, j)
+#             addTime(session, nowShowing["Life of the Party"][0], i, j)
 
 # for i in range(len(events)+len(hoyts), len(events)+len(hoyts)+len(readingCinemas)+1):
-#     for j in times3:
-#         addTime(session, nowShowing["Deadpool 2"][0], i, j)
-#         addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
-    
-#     for j in times3:
-#         addTime(session, nowShowing["Life of the Party"][0], i, j)
-#         addTime(session, nowShowing["Tully"][0], i, j)
+#     randInt = random.randint(1,3)
 
+#     if randInt == 1:
+#         for j in times1:
+#             addTime(session, nowShowing["Deadpool 2"][0], i, j)
+#             addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
+#     elif randInt == 2:
+#         for j in times2:
+#             addTime(session, nowShowing["Deadpool 2"][0], i, j)
+#             addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
+#     else:
+#         for j in times3:
+#             addTime(session, nowShowing["Deadpool 2"][0], i, j)
+#             addTime(session, nowShowing["Avengers: Infinity War"][0], i, j)
+
+#     randInt = random.randint(1,3)
+
+#     if randInt == 1:
+#         for j in times1:
+#             addTime(session, nowShowing["Solo: A Star Wars Story"][0], i, j)
+#             addTime(session, nowShowing["The Bookshop"][0], i, j)
+#     elif randInt == 2:
+#         for j in times2:
+#             addTime(session, nowShowing["Solo: A Star Wars Story"][0], i, j)
+#             addTime(session, nowShowing["The Bookshop"][0], i, j)
+#     else:
+#         for j in times3:
+#             addTime(session, nowShowing["Solo: A Star Wars Story"][0], i, j)
+#             addTime(session, nowShowing["The Bookshop"][0], i, j)
+    
+#     randInt = random.randint(1,3)
+
+#     if randInt == 1:
+#         for j in times1:
+#             addTime(session, nowShowing["Tully"][0], i, j)
+#             addTime(session, nowShowing["Life of the Party"][0], i, j)
+#     elif randInt == 2:
+#         for j in times2:
+#             addTime(session, nowShowing["Tully"][0], i, j)
+#             addTime(session, nowShowing["Life of the Party"][0], i, j)
+#     else:
+#         for j in times3:
+#             addTime(session, nowShowing["Tully"][0], i, j)
+#             addTime(session, nowShowing["Life of the Party"][0], i, j)
 
 ###################################################################################################
 
