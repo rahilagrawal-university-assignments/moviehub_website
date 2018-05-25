@@ -8,6 +8,9 @@ import imdb
 from dbFunctions import *
 import datetime
 
+currentMovie = None
+currentId = 0
+
 @app.route('/', methods=["GET", "POST"])
 def index():
     if request.method == "POST":
@@ -112,6 +115,8 @@ def movies():
 
 @app.route('/moviedetail', methods=["GET" , "POST"])
 def moviedetail():
+    global currentMovie
+    global currentId
     if request.method == "POST":
         if request.form["searchText"]:
             searchText = request.form["searchText"]
@@ -138,8 +143,15 @@ def moviedetail():
         dates.append(currentDate + datetime.timedelta(days=i))
     
 
-    movie = ia.get_movie(imdb_id)
-    ia.update(movie)
+
+    if currentMovie is None or currentId != imdb_id:
+        movie = ia.get_movie(imdb_id)
+        ia.update(movie)
+        currentMovie = movie
+        currentId = imdb_id
+    else:
+        movie = currentMovie
+
     cinemaList = []
     timesList = timeQuery(imdb_id)
     
