@@ -20,7 +20,6 @@ def index():
     
     topMovies = ["Avengers: Infinity War", "Deadpool 2", "Life of the Party", "Solo", "Bookshop", "Tully"]
 
-
     nowShowing = []
     for i in topMovies:
         nowShowing = nowShowing + searchQuery(i)
