@@ -62,7 +62,11 @@ def payment():
     cinema = request.args.get("cinema")
     time = request.args.get("time")
     movie = request.args.get("movie")
-    return render_template("paymentU.html", cinema=cinema, time=time, movie=movie)
+    child = request.args.get("child")
+    adult = request.args.get("adult")
+    student = request.args.get("student")
+    pensioner = request.args.get("pensioner")
+    return render_template("paymentU.html", cinema=cinema, time=time, movie=movie, child=child, adult=adult, student=student, pensioner=pensioner)
 
 @app.route('/paymentSuccessful', methods=["GET" , "POST"])
 def paymentSuccessful():

@@ -180,9 +180,12 @@
                           {% for time in times %}
                               {% if time.cinema_id == cinema.cinema_id %}
                                   <td>
-                                  
-                                    <button class="btn btn-basic" onclick="window.location.href='http://127.0.0.1:5000/payment?cinema={{cinema.name}}&time={{time.showtime}}&movie={{moviedb.name}}'">{{time.showtime}}</button>
-                                      Child: ${{range(7,11) | random}} Adult: ${{range(15,21)|random}} Student: ${{range(11,15)|random}} Pensioner: ${{range(11,15)|random}}
+                                    {% set child = range(7,11) | random %}
+                                    {% set adult = range(15,21)|random %}
+                                    {% set student = range(11,15)|random %}
+                                    {% set pensioner = range(11,15)|random %}
+                                    <button class="btn btn-basic" onclick="window.location.href='http://127.0.0.1:5000/payment?cinema={{cinema.name}}&time={{time.showtime}}&movie={{moviedb.name}}&child={{child}}&adult={{adult}}&student={{student}}&pensioner={{pensioner}}'">{{time.showtime}}</button>
+                                      Child: ${{child}} Adult: ${{adult}} Student: ${{student}} Pensioner: ${{pensioner}}
                                   </td>
                               {% endif %}
                           {% endfor %}

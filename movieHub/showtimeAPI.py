@@ -31,10 +31,11 @@ def get_theaters():
             url="https://api.internationalshowtimes.com/v4/cinemas/",
             params={
                 "country" : "AU",
-                "location" : "-33.939961, 151.22966"
+                "location" : "-33.939961, 151.22966",
+                "distance" : 20
             },
             headers={
-                "X-API-Key": "jSaZYUE0VbpaOAUawsBmScBjQjXB5Vd8",
+                "X-API-Key": "SDy88dEwfzVokOFQtE8ZgxqvoIHWKo72",
             },
         )
         json_data = response.text
@@ -97,3 +98,9 @@ def get_imdbId(movie_ids):
         return loaded_json
     except requests.exceptions.RequestException:
         print('HTTP Request failed')
+
+
+# cinemas = get_theaters()
+
+# for i in cinemas["cinemas"]:
+#     print(i["name"])

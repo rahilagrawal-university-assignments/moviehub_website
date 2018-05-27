@@ -78,9 +78,9 @@
     <h4 class="mb-3">Tickets</h4>
     <div class="row needs-validation" novalidate>
       <div class="col mb-3">
-        <label for="Child Ticket">Child Ticket/s</label>
+        <label for="Child Ticket">Child Ticket/s: ${{child}}</label>
         <br>
-        <select name="child" required>
+        <select class="type" name="child" required>
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -96,8 +96,8 @@
       </div>
 
       <div class="col mb-3 floatDiv">
-        <label for="Student Ticket">Student Ticket/s</label><br>
-        <select name="student" required>
+        <label for="Student Ticket">Student Ticket/s: ${{student}}</label><br>
+        <select class="type" name="student" required>
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -115,8 +115,8 @@
 
 
       <div class="col ">
-        <label for="Adult Ticket">Adult Ticket/s</label><br>
-        <select name="adult" required>
+        <label for="Adult Ticket">Adult Ticket/s: ${{adult}}</label><br>
+        <select class="type" name="adult" required>
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -132,8 +132,8 @@
       </div>
 
       <div class="col floatDiv">
-        <label for="Pensioner Ticket">Pensioner Ticket/s</label><br>
-        <select name="pensioner" required>
+        <label for="Pensioner Ticket">Pensioner Ticket/s: ${{pensioner}}</label><br>
+        <select class="type" name="pensioner" required>
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -147,7 +147,6 @@
             <option value="10">10</option>
         </select>
       </div>
-
     </div>
 
       <hr class="mb-6">
@@ -230,5 +229,25 @@
     <script src="../static/styles/js/bootstrap.bundle.js"></script>
 
 </body>
+
+<!-- <script type="text/javascript">
+  var total = 0;
+
+  $("select").on("change", function() {
+
+  total = 0;
+
+  $(".type").each(function() {
+
+    if ($(this).val() !== "") {
+      if ($(this).name() == "child")
+        total += parseInt($(this).val());
+    }
+  }); 
+  
+  $("#total").val(total);
+
+});
+</script> -->
 
 </html>
